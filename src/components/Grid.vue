@@ -5,18 +5,16 @@
             <div class="panel wide wide-1">
                 <div class="content">
                     <div class="text-center">
-                        <v-dialog v-model="dialog1" width="500">
+                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" width="750">
                             <template v-slot:activator="{ on, attrs }">
-                                <!-- <v-btn color="red lighten-2" dark > -->
-                                <img src="./../assets/content/first.jpg" alt="" v-bind="attrs" v-on="on">
-                                <!-- </v-btn> -->
+                                <img src="./../assets/content/second.jpeg" alt="" v-bind="attrs" v-on="on">
                             </template>
-                            <v-card class="modalImg">
+                            <v-card fluid fill-width class="modalImg">
                                 <v-card-title class="headline grey lighten-2">
                                     Naam aanlever
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/first.jpg">
+                                    <img src="./../assets/content/second.jpeg">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
@@ -33,18 +31,16 @@
             <div class="panel">
                 <div class="content">
                     <div class="text-center">
-                        <v-dialog v-model="dialog2" width="500">
+                        <v-dialog v-model="dialog2" transition="dialog-bottom-transition" width="750">
                             <template v-slot:activator="{ on, attrs }">
-                                <!-- <v-btn color="red lighten-2" dark > -->
-                                <img src="./../assets/content/second.jpeg" alt="" v-bind="attrs" v-on="on">
-                                <!-- </v-btn> -->
+                                <img src="./../assets/content/first.jpg" alt="" v-bind="attrs" v-on="on">
                             </template>
                             <v-card class="modalImg sec">
                                 <v-card-title class="headline grey lighten-2">
                                     Naam aanlever
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/second.jpeg">
+                                    <img src="./../assets/content/first.jpg">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
@@ -61,11 +57,9 @@
             <div class="panel">
                 <div class="content">
                     <div class="text-center">
-                        <v-dialog v-model="dialog3" width="500">
+                        <v-dialog v-model="dialog3" transition="dialog-bottom-transition" width="600">
                             <template v-slot:activator="{ on, attrs }">
-                                <!-- <v-btn color="red lighten-2" dark > -->
                                 <img src="./../assets/content/third.jpeg" alt="" v-bind="attrs" v-on="on">
-                                <!-- </v-btn> -->
                             </template>
                             <v-card class="modalImg sec">
                                 <v-card-title class="headline grey lighten-2">
@@ -90,7 +84,10 @@
             <div class="panel">
                 <div @click="openModal" class="content"><img src="" alt=""></div>
             </div>
-            <div class="panel title">George Alexander Swildens</div>
+            <div class="panel title">
+                <h3>George Alexander Swildens</h3>
+                <h5>8 Febuari</h5>
+            </div>
             <div class="panel">
                 <div @click="openModal" class="content"><img src="" alt=""></div>
             </div>
@@ -124,6 +121,7 @@ export default {
         return {
             dialog1: false,
             dialog2: false,
+            dialog3: false,
         }
     },
     methods: {
@@ -240,6 +238,21 @@ p {
 .title {
     grid-column: 2 / span 2;
     grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-size: 120%;
+
+    }
+
+    h5 {
+        font-size: 70%;
+
+    }
+
 }
 
 .wide-3 {
@@ -262,18 +275,18 @@ p {
 }
 
 .content {
-    width: 100%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
 
     img {
-        width: 60%;
+        width: 90%;
         height: auto;
         border-radius: 3px;
     }
 }
 
 .modalImg {
-    width: 100%;
+
 
     img {
         width: 100%;
