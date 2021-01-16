@@ -1,11 +1,10 @@
 <template>
-    <div id="app">
+    <div data-app id="app">
         <Grid></Grid>
     </div>
 </template>
 <script>
 import Grid from './components/Grid.vue'
-
 export default {
     name: 'App',
     components: {
@@ -25,14 +24,12 @@ body {
     padding: 0;
     background-color: #fff;
     color: #444;
-
     font-family: 'Open Sans', 'sans-serif';
 }
 
 html:focus-within {
     scroll-behavior: smooth;
 }
-
 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
