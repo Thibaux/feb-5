@@ -39,7 +39,7 @@
                                 <img src="./../assets/content/second.jpeg" alt="" v-bind="attrs" v-on="on">
                                 <!-- </v-btn> -->
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImg sec">
                                 <v-card-title class="headline grey lighten-2">
                                     Naam aanlever
                                 </v-card-title>
@@ -59,7 +59,32 @@
                 </div>
             </div>
             <div class="panel">
-                <div @click="openModal" class="content"><img src="" alt=""></div>
+                <div class="content">
+                    <div class="text-center">
+                        <v-dialog v-model="dialog3" width="500">
+                            <template v-slot:activator="{ on, attrs }">
+                                <!-- <v-btn color="red lighten-2" dark > -->
+                                <img src="./../assets/content/third.jpeg" alt="" v-bind="attrs" v-on="on">
+                                <!-- </v-btn> -->
+                            </template>
+                            <v-card class="modalImg sec">
+                                <v-card-title class="headline grey lighten-2">
+                                    Naam aanlever
+                                </v-card-title>
+                                <v-card-text>
+                                    <img src="./../assets/content/third.jpeg">
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog3 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
+                </div>
             </div>
             <!-- ROW 2 -->
             <div class="panel">
@@ -237,12 +262,13 @@ p {
 }
 
 .content {
-    cursor: pointer;
-    width: auto;
+    width: 100%;
+    height: 90%;
 
     img {
-        width: 50%;
+        width: 60%;
         height: auto;
+        border-radius: 3px;
     }
 }
 
@@ -252,6 +278,7 @@ p {
     img {
         width: 100%;
         height: auto;
+        border-radius: 3px;
     }
 }
 
