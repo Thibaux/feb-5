@@ -7,14 +7,14 @@
                     <div class="text-center">
                         <v-dialog v-model="dialog1" transition="dialog-bottom-transition" width="750">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/second.jpeg" alt="" v-bind="attrs" v-on="on">
+                                <img src="./../assets/content/img/second.jpeg" alt="" v-bind="attrs" v-on="on">
                             </template>
                             <v-card fluid fill-width class="modalImg">
                                 <v-card-title class="headline grey lighten-2">
                                     Naam aanlever
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/second.jpeg">
+                                    <img src="./../assets/content/img/second.jpeg">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
@@ -33,14 +33,14 @@
                     <div class="text-center">
                         <v-dialog v-model="dialog2" transition="dialog-bottom-transition" width="750">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/first.jpg" alt="" v-bind="attrs" v-on="on">
+                                <img src="./../assets/content/img/first.jpg" alt="" v-bind="attrs" v-on="on">
                             </template>
                             <v-card class="modalImg sec">
                                 <v-card-title class="headline grey lighten-2">
                                     Naam aanlever
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/first.jpg">
+                                    <img src="./../assets/content/img/first.jpg">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
@@ -59,14 +59,14 @@
                     <div class="text-center">
                         <v-dialog v-model="dialog3" transition="dialog-bottom-transition" width="600">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/third.jpeg" alt="" v-bind="attrs" v-on="on">
+                                <img src="./../assets/content/img/third.jpeg" alt="" v-bind="attrs" v-on="on">
                             </template>
                             <v-card class="modalImg sec">
                                 <v-card-title class="headline grey lighten-2">
                                     Naam aanlever
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/third.jpeg">
+                                    <img src="./../assets/content/img/third.jpeg">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
@@ -85,15 +85,25 @@
                 <div @click="openModal" class="content"><img src="" alt=""></div>
             </div>
             <div class="panel title">
-                <h3>George Alexander Swildens</h3>
-                <h5>8 Febuari</h5>
+                <h2>George Alexander Swildens</h2>
+                <h4>5 febuari</h4>
+                <h5>Een eerbetoon van creatieve creaties & composities</h5>
+                <h5>Ter nagedachtenis aan George</h5>
             </div>
             <div class="panel">
-                <div @click="openModal" class="content"><img src="" alt=""></div>
+                <div class="content">
+                    <audio controls>
+                        <source src="./../assets/content/audio/first.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
             <!-- ROW 3 -->
             <div class="panel wide wide-3">
-                <div @click="openModal" class="content"><img src="" alt=""></div>
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
             <div class="panel">
                 <div @click="openModal" class="content"><img src="" alt=""></div>
@@ -115,17 +125,31 @@
     </div>
 </template>
 <script>
+import 'vue-dplayer/dist/vue-dplayer.css'
+
 export default {
     name: 'Grid',
+    components: {
+        VuetifyAudio: () =>
+            import('vuetify-audio'),
+        // VuePlayer
+    },
     data() {
         return {
             dialog1: false,
             dialog2: false,
             dialog3: false,
+            file1: './../assets/content/audio/first.mp3',
+            file: 'http://www.hochmuth.com/mp3/Boccherini_Concerto_478-1.mp3',
+            audioSources: {
+                // "audio/mp3": 'first.mp3',
+                "audio/mp3": '12.mp3',
+            },
+            videoSources: {
+                // "audio/mp3": 'first.mp3',
+                "video/mp4": '13.mp4',
+            },
         }
-    },
-    methods: {
-        openModal() {}
     },
 }
 </script>
@@ -139,7 +163,6 @@ export default {
     padding-bottom: 4%;
     padding-top: 4%;
 }
-
 
 h1,
 p {
@@ -160,7 +183,6 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 .wrapper {
     display: grid;
@@ -219,7 +241,6 @@ p {
     }
 }
 
-
 .panel {
     margin-left: 5px;
     margin-right: 5px;
@@ -243,16 +264,17 @@ p {
     justify-content: center;
     align-items: center;
 
-    h3 {
-        font-size: 120%;
+    h2 {
+        font-size: 2.5vw;
+    }
 
+    h4 {
+        font-size: 1.8vw;
     }
 
     h5 {
-        font-size: 70%;
-
+        font-size: 1.5vw;
     }
-
 }
 
 .wide-3 {
@@ -277,6 +299,9 @@ p {
 .content {
     width: 95%;
     height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
         width: 90%;
@@ -286,8 +311,6 @@ p {
 }
 
 .modalImg {
-
-
     img {
         width: 100%;
         height: auto;
@@ -317,6 +340,22 @@ p {
 
     .content img {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .title {
+        h2 {
+            font-size: 5vw;
+        }
+
+        h4 {
+            font-size: 3vw;
+        }
+
+        h5 {
+            font-size: 2vw;
+        }
     }
 }
 </style>
