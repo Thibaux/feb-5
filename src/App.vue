@@ -1,15 +1,18 @@
 <template>
     <div data-app id="app">
-        <Grid></Grid>
+        <!-- <Grid></Grid> -->
+        <GridFull></GridFull>
     </div>
 </template>
 <script>
 import Grid from './components/Grid.vue'
+import GridFull from './components/GridFull.vue'
 
 export default {
     name: 'App',
     components: {
-        Grid
+        Grid,
+        GridFull
     }
 }
 </script>

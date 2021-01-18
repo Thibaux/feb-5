@@ -153,8 +153,6 @@ export default {
     overflow-x: hidden;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4%;
-    padding-top: 4%;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -164,10 +162,9 @@ p {
 }
 
 .wrapper {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     /* display: grid;*/
-    grid-gap: 20px;
 }
 
 
@@ -180,7 +177,7 @@ p {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     grid-auto-rows: minmax(20rem, auto);
 
     .panel:nth-child(1) {
@@ -288,7 +285,6 @@ p {
 .wrapper>* {
     background-color: #444;
     color: #fff;
-    border-radius: 5px;
     padding: 20px;
     font-size: 150%;
     margin-bottom: 10px;
