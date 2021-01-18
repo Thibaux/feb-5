@@ -7,14 +7,13 @@
                     <div class="text-center">
                         <v-dialog v-model="dialog1" transition="dialog-bottom-transition" width="750">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/img/second.jpeg" alt="" v-bind="attrs" v-on="on">
+                                <img src="" alt="" v-bind="attrs" v-on="on">
                             </template>
                             <v-card fluid fill-width class="modalImg">
                                 <v-card-title class="headline grey lighten-2">
-                                    Naam aanlever
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/img/second.jpeg">
+                                    <img src="" alt="">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
@@ -33,14 +32,14 @@
                     <div class="text-center">
                         <v-dialog v-model="dialog2" transition="dialog-bottom-transition" width="750">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/img/first.jpg" alt="" v-bind="attrs" v-on="on">
+                                <img src="./../assets/schilderij.jpeg" alt="" v-bind="attrs" v-on="on">
                             </template>
                             <v-card class="modalImg sec">
                                 <v-card-title class="headline grey lighten-2">
-                                    Naam aanlever
+                                    G.A. Swildens
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/img/first.jpg">
+                                    <img src="./../assets/schilderij.jpeg">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
@@ -59,14 +58,13 @@
                     <div class="text-center">
                         <v-dialog v-model="dialog3" transition="dialog-bottom-transition" width="600">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/img/third.jpeg" alt="" v-bind="attrs" v-on="on">
+                                <img src="" alt="" v-bind="attrs" v-on="on">
                             </template>
                             <v-card class="modalImg sec">
                                 <v-card-title class="headline grey lighten-2">
-                                    Naam aanlever
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/img/third.jpeg">
+                                    <img src="" alt="">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
@@ -82,6 +80,9 @@
             </div>
             <!-- ROW 2 -->
             <div class="panel">
+                <p class="titleAorV">
+                    G.A. Swildens
+                </p>
                 <div class="content">
                     <audio controls>
                         <source src="./../assets/content/audio/first.mp3" type="audio/mpeg"> Your browser does not support the audio element.
@@ -89,10 +90,13 @@
                 </div>
             </div>
             <div class="panel title">
-                <h2>George Alexander Swildens</h2>
-                <h4>Geboortedag 5 febuari</h4>
-                <h5>Een eerbetoon van en aan creatieve creaties & composities</h5>
-                <!-- <h5>Ter nagedachtenis aan George</h5> -->
+                <div class="titleContent">
+                    <!-- <h5>Een eerbetoon van en aan creatieve creaties & composities</h5> -->
+                    <h5>
+                        Een verzameling van creativeit als eerbetoon aan de geboortedag 5 febuari van
+                    </h5>
+                    <h2>George Alexander Swildens</h2>
+                </div>
             </div>
             <div class="panel">
                 <div class="content">
@@ -200,7 +204,7 @@ p {
     }
 
     .panel:nth-child(5) {
-        background-color: #484349;
+        background-color: #aec6cf;
     }
 
     .panel:nth-child(6) {
@@ -208,11 +212,11 @@ p {
     }
 
     .panel:nth-child(7) {
-        background-color: #aec6cf;
+        background-color: #ff6961;
     }
 
     .panel:nth-child(8) {
-        background-color: #ff6961;
+        background-color: #aec6cf;
     }
 
     .panel:nth-child(9) {
@@ -255,18 +259,23 @@ p {
     justify-content: center;
     align-items: center;
 
+    .titleContent {
+        width: 75%;
+
+    }
+
     h2 {
-        font-size: 2.5vw;
-        font-weight: 900;
+        font-size: 2vw;
+        font-weight: 600;
     }
 
     h4 {
         font-size: 1.8vw;
         font-weight: 500;
-        margin-bottom: 5%;
     }
 
     h5 {
+        margin-bottom: 3%;
         font-size: 1.5vw;
         font-weight: 400;
     }
@@ -310,6 +319,10 @@ p {
         height: auto;
         border-radius: 3px;
     }
+}
+
+.titleAorV {
+    color: black;
 }
 
 @supports (display: grid) {
