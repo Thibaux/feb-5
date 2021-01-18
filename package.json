@@ -10,11 +10,9 @@
     "@iomariani/vue-player": "^0.5.3",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
-    "vue-aplayer": "^1.6.1",
     "vue-dplayer": "^0.0.10",
     "vue-router": "^3.4.9",
-    "vuetify": "^2.2.11",
-    "vuetify-audio": "^0.3.3"
+    "vuetify": "^2.2.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

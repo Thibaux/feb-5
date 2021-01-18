@@ -82,13 +82,17 @@
             </div>
             <!-- ROW 2 -->
             <div class="panel">
-                <div @click="openModal" class="content"><img src="" alt=""></div>
+                <div class="content">
+                    <audio controls>
+                        <source src="./../assets/content/audio/first.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
             <div class="panel title">
                 <h2>George Alexander Swildens</h2>
-                <h4>5 febuari</h4>
-                <h5>Een eerbetoon van creatieve creaties & composities</h5>
-                <h5>Ter nagedachtenis aan George</h5>
+                <h4>Geboortedag 5 febuari</h4>
+                <h5>Een eerbetoon van en aan creatieve creaties & composities</h5>
+                <!-- <h5>Ter nagedachtenis aan George</h5> -->
             </div>
             <div class="panel">
                 <div class="content">
@@ -106,54 +110,49 @@
                 </div>
             </div>
             <div class="panel">
-                <div @click="openModal" class="content"><img src="" alt=""></div>
+                <div class="content">
+                    <audio controls>
+                        <source src="./../assets/content/audio/first.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
             <div class="panel">
-                <div @click="openModal" class="content"><img src="" alt=""></div>
+                <div class="content"><img src="" alt=""></div>
             </div>
             <!-- ROW 4 -->
             <div class="panel">
-                <div @click="openModal" class="content"><img src="" alt=""></div>
+                <div class="content"><img src="" alt=""></div>
             </div>
             <div class="panel wide wide-4">
-                <div @click="openModal" class="content"><img src="" alt=""></div>
+                <div class="content"><img src="" alt=""></div>
             </div>
             <div class="panel">
-                <div @click="openModal" class="content"><img src="" alt=""></div>
+                <div class="content"><img src="" alt=""></div>
             </div>
         </div>
     </div>
 </template>
 <script>
-import 'vue-dplayer/dist/vue-dplayer.css'
+// import 'vue-dplayer/dist/vue-dplayer.css'
 
 export default {
     name: 'Grid',
-    components: {
-        VuetifyAudio: () =>
-            import('vuetify-audio'),
-        // VuePlayer
-    },
+    // components: {
+    // VuetifyAudio: () =>
+    // import('vuetify-audio'),
+    // },
     data() {
         return {
             dialog1: false,
             dialog2: false,
             dialog3: false,
-            file1: './../assets/content/audio/first.mp3',
-            file: 'http://www.hochmuth.com/mp3/Boccherini_Concerto_478-1.mp3',
-            audioSources: {
-                // "audio/mp3": 'first.mp3',
-                "audio/mp3": '12.mp3',
-            },
-            videoSources: {
-                // "audio/mp3": 'first.mp3',
-                "video/mp4": '13.mp4',
-            },
         }
     },
 }
 </script>
 <style scoped lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;447&display=swap');
+
 .Main {
     display: flex;
     width: 100vw;
@@ -162,6 +161,7 @@ export default {
     align-items: center;
     padding-bottom: 4%;
     padding-top: 4%;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -266,14 +266,18 @@ p {
 
     h2 {
         font-size: 2.5vw;
+        font-weight: 900;
     }
 
     h4 {
         font-size: 1.8vw;
+        font-weight: 500;
+        margin-bottom: 5%;
     }
 
     h5 {
         font-size: 1.5vw;
+        font-weight: 400;
     }
 }
 
