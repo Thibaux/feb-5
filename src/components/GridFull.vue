@@ -81,7 +81,6 @@
             <!-- ROW 2 -->
             <div class="panel">
                 <p class="titleAorV">
-                    G.A. Swildens
                 </p>
                 <div class="content">
                     <audio controls>
