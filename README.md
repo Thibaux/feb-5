@@ -1,21 +1,11 @@
-# feb-8
+# Geboortedag George Swildens
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/586c5558-aea2-44dc-8a21-776e4b99c75f/deploy-status)](https://app.netlify.com/sites/geboortedag-george/deploys)
 
+Een site met creaties ter ere van George Alexander Swildens.
 
-## Project setup
-```
-npm install
-```
+> Build with Vue.js
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+> Vuetify used
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> Hosted on Netlify
