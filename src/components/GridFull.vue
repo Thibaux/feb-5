@@ -287,8 +287,8 @@ p {
     grid-auto-rows: minmax(20rem, auto);
 
     .panel:nth-child(1) {
-        // blue
-        background-color: #aec6cf;
+        // purple
+        background-color: #caa7bc;
     }
 
     .panel:nth-child(2) {
@@ -302,10 +302,12 @@ p {
     }
 
     .panel:nth-child(4) {
-        background-color: #aec6cf;
+        // green
+        background-color: #81d381;
     }
 
     .panel:nth-child(5) {
+        // blue
         background-color: #aec6cf;
     }
 
@@ -318,7 +320,8 @@ p {
     }
 
     .panel:nth-child(8) {
-        background-color: #fdfd96;
+        // pink
+        background-color: #f7e0e1;
     }
 
     .panel:nth-child(9) {
