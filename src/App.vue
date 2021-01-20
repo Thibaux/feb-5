@@ -2,17 +2,20 @@
     <div data-app id="app">
         <!-- <Grid></Grid> -->
         <GridFull></GridFull>
+        <!-- <CounterTest></CounterTest> -->
     </div>
 </template>
 <script>
 import Grid from './components/Grid.vue'
 import GridFull from './components/GridFull.vue'
+import CounterTest from './components/CounterTest.vue'
 
 export default {
     name: 'App',
     components: {
         Grid,
-        GridFull
+        GridFull,
+        CounterTest
     }
 }
 </script>

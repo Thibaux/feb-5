@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
-import VuePlayer from '@iomariani/vue-player'
-import '@iomariani/vue-player/dist/vue-player.css'
+import VueCountdown from '@chenfengyuan/vue-countdown';
+
 
 Vue.config.productionTip = false
 
-Vue.component('vue-player', VuePlayer)
+Vue.component(VueCountdown.name, VueCountdown);
+// Vue.component('vue-player', VuePlayer)
 
 new Vue({
     vuetify,

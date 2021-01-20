@@ -2,10 +2,10 @@
     <div class="Main">
         <div class="wrapper">
             <!-- ROw 1 -->
-            <div class="panel wide wide-1">
+            <div class="panel">
                 <div class="content">
-                    <div class="text-center">
-                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" width="750">
+                    <div class="contentContent text-center">
+                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" width="">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="" alt="" v-bind="attrs" v-on="on">
                             </template>
@@ -30,13 +30,12 @@
             <div class="panel">
                 <div class="content">
                     <div class="text-center">
-                        <v-dialog v-model="dialog2" transition="dialog-bottom-transition" width="750">
-                            <template v-slot:activator="{ on, attrs }">
+                        <v-dialog v-model="dialog2" dark transition="dialog-bottom-transition" content-class="dialogTwo" :width="width">
+                            <template v-slot:activator=" { on, attrs }">
                                 <img src="./../assets/schilderij.jpeg" alt="" v-bind="attrs" v-on="on">
                             </template>
                             <v-card class="modalImg sec">
                                 <v-card-title class="headline grey lighten-2">
-                                    G.A. Swildens
                                 </v-card-title>
                                 <v-card-text>
                                     <img src="./../assets/schilderij.jpeg">
@@ -88,14 +87,24 @@
                     </audio>
                 </div>
             </div>
-            <div class="panel title">
+            <div class="title">
                 <div class="titleContent">
                     <!-- <h5>Een eerbetoon van en aan creatieve creaties & composities</h5> -->
                     <h5>
-                        Een verzameling van creativeit als eerbetoon aan de geboortedag 5 febuari van
+                        Een verzameling van creativeit als eerbetoon aan de geboortedag 5 februari van
                     </h5>
                     <h2>George Alexander Swildens</h2>
                 </div>
+                <footer>
+                    <p>Thibaux Swildens
+                        <a href="https://github.com/Thibaux" target="_blank">
+                            <img src="./../assets/socials/github.png" alt="github_link">
+                        </a>
+                        <a href="https://www.linkedin.com/in/thibaux-swildens-17ba80ba/" target="_blank">
+                            <img src="./../assets/socials/linked.png" alt="linkedin_link">
+                        </a>
+                    </p>
+                </footer>
             </div>
             <div class="panel">
                 <div class="content">
@@ -105,7 +114,7 @@
                 </div>
             </div>
             <!-- ROW 3 -->
-            <div class="panel wide wide-3">
+            <div class="panel">
                 <div class="content">
                     <video width="320" height="240" controls>
                         <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
@@ -120,17 +129,58 @@
                 </div>
             </div>
             <div class="panel">
-                <div class="content"><img src="" alt=""></div>
+                <div class="content">
+                    <!-- <div class="text-center">
+    <v-dialog v-model="dialog4" transition="dialog-bottom-transition" width="60%">
+        <template v-slot:activator="{ on, attrs }">
+            <div v-bind="attrs" v-on="on">
+                Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus
+            </div>
+        </template>
+        <v-card class="modalImg sec">
+            <v-card-title class="headline grey lighten-2">
+            </v-card-title>
+            <v-card-text>
+                <div class="contentText">
+                    Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus consequat. Donec eget sapien eu lorem tristique tempor id a risus. Nunc dignissim semper enim non tristique. Maecenas sit amet aliquam eros. Nullam euismod varius ultrices.
+                    Mauris ut rutrum neque, at tristique mauris. Mauris et lacus rutrum augue dignissim ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales nibh at rutrum placerat. Proin lacinia nulla ut molestie viverra. Integer ornare ligula gravida molestie feugiat. Etiam fringilla, nisl sed fringilla scelerisque, ligula mi porttitor quam, vitae eleifend orci turpis non nibh. Curabitur vitae libero posuere, tristique risus vitae, porttitor metus. Etiam tincidunt, enim commodo laoreet maximus, turpis massa suscipit risus, vitae lobortis felis nibh vitae est. Curabitur porta cursus lorem eget tristique. Integer non lacus ut augue pretium aliquet eu ut ligula. Fusce blandit, ligula et interdum egestas, mauris elit congue odio, eget dapibus nulla arcu sed lacus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nec dui in facilisis. Curabitur tincidunt molestie pellentesque. Praesent venenatis felis et ipsum ornare viverra. Etiam eu risus congue odio ultricies feugiat et vel velit. Maecenas rutrum purus at mi venenatis, non consectetur nunc mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas erat quam, imperdiet vel odio in, semper condimentum justo. Nulla interdum diam nec ante efficitur aliquet. Morbi in neque nec ex tincidunt laoreet vel sit amet est. Duis nisl augue, imperdiet sed lacinia quis, vulputate sed risus.
+                    Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus consequat. Donec eget sapien eu lorem tristique tempor id a risus. Nunc dignissim semper enim non tristique. Maecenas sit amet aliquam eros. Nullam euismod varius ultrices.
+                    Mauris ut rutrum neque, at tristique mauris. Mauris et lacus rutrum augue dignissim ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales nibh at rutrum placerat. Proin lacinia nulla ut molestie viverra. Integer ornare ligula gravida molestie feugiat. Etiam fringilla, nisl sed fringilla scelerisque, ligula mi porttitor quam, vitae eleifend orci turpis non nibh. Curabitur vitae libero posuere, tristique risus vitae, porttitor metus. Etiam tincidunt, enim commodo laoreet maximus, turpis massa suscipit risus, vitae lobortis felis nibh vitae est. Curabitur porta cursus lorem eget tristique. Integer non lacus ut augue pretium aliquet eu ut ligula. Fusce blandit, ligula et interdum egestas, mauris elit congue odio, eget dapibus nulla arcu sed lacus.
+                    Vivamus vitae justo purus. Mauris faucibus aliquet lobortis. Cras vel orci quis ligula sodales rutrum non at urna. Sed fringilla efficitur mauris, in pellentesque lorem sodales ut. Maecenas sit amet ex at ante ultricies dictum ut vel leo. Phasellus hendrerit et lorem vitae tempus. Vestibulum eros purus, malesuada et nisl et, vulputate pellentesque libero.
+                    Morbi aliquet, urna blandit dignissim suscipit, felis tellus dictum mi, eget semper est leo eget tellus. Curabitur vehicula, ipsum suscipit rhoncus placerat, elit magna lobortis urna, id scelerisque tortor nibh nec erat. Ut bibendum nisl sit amet lacus egestas, quis ornare nisl faucibus. Ut sed sapien id justo venenatis faucibus. Pellentesque vulputate dictum augue id pharetra. Proin feugiat sagittis sem sit amet egestas. Nunc sem massa, ultrices et elementum ut, facilisis eu risus. Morbi leo libero, facilisis quis congue at, finibus ac turpis. Vivamus convallis condimentum massa quis consequat. Donec sed arcu justo. Aenean non nisl magna. Donec quis tempus metus.
+                </div>
+            </v-card-text>
+            <v-divider></v-divider>
+            <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="primary" text @click="dialog4 = false">
+                    Sluit
+                </v-btn>
+            </v-card-actions>
+        </v-card>
+    </v-dialog>
+</div> -->
+                </div>
             </div>
             <!-- ROW 4 -->
             <div class="panel">
-                <div class="content"><img src="" alt=""></div>
-            </div>
-            <div class="panel wide wide-4">
-                <div class="content"><img src="" alt=""></div>
             </div>
             <div class="panel">
-                <div class="content"><img src="" alt=""></div>
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
             </div>
         </div>
     </div>
@@ -143,8 +193,61 @@ export default {
             dialog1: false,
             dialog2: false,
             dialog3: false,
+            dialog4: false,
+            dialog5: false,
+            dialog6: false,
+            dialog7: false,
+            dialog8: false,
+            dialog9: false,
+            dialog10: false,
+            dialog11: false,
+            dialog12: false,
+            dialog13: false,
+            dialog14: false,
+            dialog15: false,
+            dialog16: false,
+            dialog17: false,
+            dialog18: false,
+            dialog19: false,
+            dialog20: false,
+            dialog21: false,
+            dialog22: false,
+            dialog23: false,
+            dialog24: false,
+            dialog25: false,
+            dialog26: false,
+            dialog27: false,
+            dialog28: false,
+            dialog29: false,
+            dialog30: false,
+            dialog31: false,
+            dialog32: false,
+            dialog33: false,
+            dialog34: false,
+            dialog35: false,
+            dialog36: false,
+            dialog37: false,
+            dialog38: false,
+            dialog39: false,
+            dialog40: false,
         }
     },
+    computed: {
+        width() {
+            switch (this.$vuetify.breakpoint.name) {
+                case 'xs':
+                    return 500
+                case 'sm':
+                    return 600
+                case 'md':
+                    return 700
+                case 'lg':
+                    return 700
+                case 'xl':
+                    return 800
+            }
+        },
+    }
 }
 </script>
 <style scoped lang="scss">
@@ -180,12 +283,12 @@ p {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     grid-auto-rows: minmax(20rem, auto);
 
     .panel:nth-child(1) {
-        // red
-        background-color: #ff6961;
+        // blue
+        background-color: #aec6cf;
     }
 
     .panel:nth-child(2) {
@@ -194,12 +297,12 @@ p {
     }
 
     .panel:nth-child(3) {
-        // blue
-        background-color: #aec6cf;
+        // red
+        background-color: #ff6961;
     }
 
     .panel:nth-child(4) {
-        background-color: #fdfd96;
+        background-color: #aec6cf;
     }
 
     .panel:nth-child(5) {
@@ -211,27 +314,39 @@ p {
     }
 
     .panel:nth-child(7) {
-        background-color: #ff6961;
+        background-color: #fdfd96;
     }
 
     .panel:nth-child(8) {
-        background-color: #aec6cf;
+        background-color: #fdfd96;
     }
 
     .panel:nth-child(9) {
-        background-color: #fdfd96;
-    }
-
-    .panel:nth-child(10) {
         background-color: #ff6961;
     }
 
-    .panel:nth-child(11) {
+    .panel:nth-child(10) {
         background-color: #fdfd96;
+    }
+
+    .panel:nth-child(11) {
+        background-color: #aec6cf;
     }
 
     .panel:nth-child(12) {
         background-color: #aec6cf;
+    }
+
+    .panel:nth-child(13) {
+        background-color: #fdfd96;
+    }
+
+    .panel:nth-child(14) {
+        background-color: #ff6961;
+    }
+
+    .panel:nth-child(15) {
+        background-color: #fdfd96;
     }
 }
 
@@ -251,31 +366,55 @@ p {
 }
 
 .title {
+    background-color: #aec6cf;
     grid-column: 2 / span 2;
     grid-row: 2;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
 
     .titleContent {
         width: 75%;
+    }
 
+    footer {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+
+        img:first-child {
+            margin-left: 5px;
+        }
+
+        p {
+            font-size: 0.6rem;
+            font-weight: 500;
+            color: #313639;
+        }
+
+        img {
+            width: 13px;
+            height: auto;
+            margin-bottom: -3px;
+        }
     }
 
     h2 {
-        font-size: 2vw;
+        font-size: 2.5rem;
         font-weight: 600;
     }
 
     h4 {
-        font-size: 1.8vw;
+        font-size: 1.8rem;
         font-weight: 500;
     }
 
     h5 {
         margin-bottom: 3%;
-        font-size: 1.5vw;
+        font-size: 1.5rem;
         font-weight: 400;
     }
 }
@@ -291,12 +430,14 @@ p {
 }
 
 .wrapper>* {
-    background-color: #444;
+    // background-color: #444;
     color: #fff;
     padding: 20px;
     font-size: 150%;
     margin-bottom: 10px;
 }
+
+// CONTENT
 
 .content {
     width: 95%;
@@ -312,17 +453,29 @@ p {
     }
 }
 
+// MODAL
+
 .modalImg {
     img {
-        width: 100%;
+        width: 40vw;
         height: auto;
         border-radius: 3px;
     }
 }
 
+// TITLE AUDIO AND VIDEO
+
 .titleAorV {
     color: black;
 }
+
+// TEXT
+
+.contentText {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
 
 @supports (display: grid) {
     .wrapper>* {
@@ -332,8 +485,30 @@ p {
 
 @media only screen and (max-width: 1150px) {
     .wrapper {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-auto-rows: minmax(300px, auto);
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        grid-auto-rows: minmax(20rem, auto);
+
+        .panel:nth-child(4) {
+            background-color: #fdfd96;
+        }
+
+        .panel:nth-child(8) {
+            background-color: #ff6961;
+        }
+
+        .panel:nth-child(9) {
+            background-color: #aec6cf;
+        }
+
+        .panel:nth-child(10) {
+            background-color: #ff6961;
+        }
+    }
+
+    .modalImg {
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -352,15 +527,11 @@ p {
 @media only screen and (max-width: 575px) {
     .title {
         h2 {
-            font-size: 5vw;
-        }
-
-        h4 {
-            font-size: 3vw;
+            font-size: 1.7rem;
         }
 
         h5 {
-            font-size: 2vw;
+            font-size: 1rem;
         }
     }
 }
