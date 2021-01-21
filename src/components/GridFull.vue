@@ -165,22 +165,183 @@
             </div>
             <!-- ROW 4 -->
             <div class="panel">
-            </div>
-            <div class="panel">
                 <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
                 </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- ROW 5 -->
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- ROW 6 -->
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- ROW 7 -->
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <video width="320" height="240" controls>
+                    </video>
+                </div>
+            </div>
+            <div class="panel">
             </div>
         </div>
     </div>
@@ -302,54 +463,168 @@ p {
     }
 
     .panel:nth-child(4) {
-        // green
-        background-color: #81d381;
+        // pink
+        background-color: #f7e0e1;
     }
 
     .panel:nth-child(5) {
+        // TITLE
         // blue
         background-color: #aec6cf;
     }
 
     .panel:nth-child(6) {
-        background-color: #ff6961;
+        // green
+        background-color: #81d381;
     }
 
     .panel:nth-child(7) {
-        background-color: #fdfd96;
+        // purple
+        background-color: #caa7bc;
     }
 
     .panel:nth-child(8) {
-        // pink
-        background-color: #f7e0e1;
+        // yellow
+        background-color: #fdfd96;
     }
 
     .panel:nth-child(9) {
+        // red
         background-color: #ff6961;
     }
 
     .panel:nth-child(10) {
-        background-color: #fdfd96;
+        // pink
+        background-color: #f7e0e1;
     }
 
     .panel:nth-child(11) {
-        background-color: #aec6cf;
+        // green
+        background-color: #81d381;
     }
 
     .panel:nth-child(12) {
+        // blue
         background-color: #aec6cf;
     }
 
     .panel:nth-child(13) {
-        background-color: #fdfd96;
+        // purple
+        background-color: #caa7bc;
     }
 
     .panel:nth-child(14) {
-        background-color: #ff6961;
+        // yellow
+        background-color: #fdfd96;
     }
 
     .panel:nth-child(15) {
+        // red
+        background-color: #ff6961;
+    }
+
+
+
+
+
+    .panel:nth-child(16) {
+        // pink
+        background-color: #f7e0e1;
+    }
+
+    .panel:nth-child(17) {
+        // green
+        background-color: #81d381;
+    }
+
+    .panel:nth-child(18) {
+        // blue
+        background-color: #aec6cf;
+    }
+
+    .panel:nth-child(19) {
+        // purple
+        background-color: #caa7bc;
+    }
+
+    .panel:nth-child(20) {
+        // yellow
         background-color: #fdfd96;
+    }
+
+    .panel:nth-child(21) {
+        // red
+        background-color: #ff6961;
+    }
+
+    .panel:nth-child(22) {
+        // pink
+        background-color: #f7e0e1;
+    }
+
+    .panel:nth-child(23) {
+        // green
+        background-color: #81d381;
+    }
+
+    .panel:nth-child(24) {
+        // blue
+        background-color: #aec6cf;
+    }
+
+    .panel:nth-child(25) {
+        // purple
+        background-color: #caa7bc;
+    }
+
+    .panel:nth-child(26) {
+        // yellow
+        background-color: #fdfd96;
+    }
+
+    .panel:nth-child(27) {
+        // red
+        background-color: #ff6961;
+    }
+
+    .panel:nth-child(28) {
+        // pink
+        background-color: #f7e0e1;
+    }
+
+    .panel:nth-child(29) {
+        // green
+        background-color: #81d381;
+    }
+
+    .panel:nth-child(30) {
+        // blue
+        background-color: #aec6cf;
+    }
+
+    .panel:nth-child(31) {
+        // purple
+        background-color: #caa7bc;
+    }
+
+    .panel:nth-child(32) {
+        // yellow
+        background-color: #fdfd96;
+    }
+
+    .panel:nth-child(33) {
+        // red
+        background-color: #ff6961;
+    }
+
+    .panel:nth-child(34) {
+        // pink
+        background-color: #f7e0e1;
+    }
+
+    .panel:nth-child(35) {
+        // green
+        background-color: #81d381;
     }
 }
 
