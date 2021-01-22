@@ -412,8 +412,6 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;447&display=swap');
-
 .Main {
     display: flex;
     width: 100vw;

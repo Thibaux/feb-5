@@ -1,9 +1,9 @@
 <template>
     <div class="Main">
-        <countdown v-if="" :time="time" :interval="100" tag="p">
+        <countdown v-if="showCountdown" @end="handleCountdownEnd" ref="countdown" :time="time" :interval="100" tag="p">
             <template slot-scope="props">{{ props.days }} days, {{ props.hours }} hours, {{ props.minutes }} minutes, {{ props.seconds }}.{{ Math.floor(props.milliseconds / 100) }} seconds.</template>
         </countdown>
-        <div v-if="counting">
+        <div v-else>
             l;askjdfl;asjkdfl;sjkf
         </div>
     </div>
@@ -11,22 +11,30 @@
 <script>
 export default {
     name: 'Grid',
+    props: {
+        emitevents: true,
+    },
     data() {
         let now = new Date();
-        // let reveal = new Date("Februari 5 2021 21:00");
-        let reveal = new Date("January 20 2021 10:57");
+        let reveal = new Date("January 22 2021 10:07");
 
         return {
             counting: false,
+            showCountdown: true,
             time: reveal - now,
         }
     },
     methods: {
         startCountdown: function() {
             this.counting = true;
+            this.showCountdown = true;
         },
         handleCountdownEnd: function() {
             this.counting = false;
+            this.showSite()
+        },
+        showSite() {
+            this.showCountdown = false;
         },
     }
 }

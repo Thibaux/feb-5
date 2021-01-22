@@ -1,25 +1,72 @@
 <template>
     <div data-app id="app">
-        <!-- <Grid></Grid> -->
-        <GridFull></GridFull>
-        <!-- <CounterTest></CounterTest> -->
+        <countdown class="Time" v-if="showCountdown" @end="handleCountdownEnd" ref="countdown" :time="time" :interval="100" tag="p">
+            <template slot-scope="props">
+                <div class="values">
+                    <div class="days">
+                        {{ props.days }}
+                        <p>dagen</p>
+                    </div>
+                    <div class="hours">
+                        {{ props.hours }}
+                        <p>uur</p>
+                    </div>
+                    <div class="minutes">
+                        {{ props.minutes }}
+                        <p>minuten</p>
+                    </div>
+                    <div class="seconds">
+                        {{ props.seconds }}.{{ Math.floor(props.milliseconds / 100) }}
+                        <p>seconden</p>
+                    </div>
+                </div>
+            </template>
+        </countdown>
+        <div v-else>
+            <GridFull></GridFull>
+        </div>
     </div>
 </template>
 <script>
-import Grid from './components/Grid.vue'
 import GridFull from './components/GridFull.vue'
-import CounterTest from './components/CounterTest.vue'
 
 export default {
     name: 'App',
+    props: {
+        emitevents: true,
+    },
     components: {
-        Grid,
         GridFull,
-        CounterTest
+    },
+    data() {
+        let now = new Date();
+        let reveal = new Date("January 31 2021 21:00");
+
+        return {
+            counting: false,
+            showCountdown: true,
+            time: reveal - now,
+        }
+    },
+    methods: {
+        startCountdown: function() {
+            this.counting = true;
+            this.showCountdown = true;
+        },
+        handleCountdownEnd: function() {
+            this.counting = false;
+            this.showSite()
+        },
+        showSite() {
+            this.showCountdown = false;
+        },
     }
 }
 </script>
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;447&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +78,7 @@ body {
     padding: 0;
     background-color: #fff;
     color: #444;
-    font-family: 'Open Sans', 'sans-serif';
+    font-family: 'Raleway', sans-serif;
 }
 
 html:focus-within {
@@ -45,5 +92,34 @@ html:focus-within {
     text-align: center;
     width: 100vw;
     height: 100vh;
+}
+
+.Time {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    .values {
+        width: 100%;
+        font-size: 6vw;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        >div {}
+
+        div:not(:first-child) {
+            margin-left: 5%;
+        }
+
+        p {
+            font-size: 2vw;
+        }
+    }
 }
 </style>
