@@ -40,8 +40,7 @@ export default {
     },
     data() {
         let now = new Date();
-        let reveal = new Date("January 22 2021 21:00");
-
+        let reveal = new Date("January 20 2021 21:00");
         return {
             counting: false,
             showCountdown: true,

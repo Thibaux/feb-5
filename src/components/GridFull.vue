@@ -3,20 +3,23 @@
         <div class="wrapper">
             <!-- ROw 1 -->
             <div class="panel">
-                <div class="content">
-                    <div class="contentContent text-center">
-                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" width="">
+                <div class="contentPortret">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog1" dark transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="" alt="" v-bind="attrs" v-on="on">
+                                <img src="./../assets/content/img/rwdeBoer.jpg" alt="" v-bind="attrs" v-on="on">
                             </template>
-                            <v-card fluid fill-width class="modalImg">
+                            <v-card fluid fill-width class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="" alt="">
+                                    <img src="./../assets/content/img/rwdeBoer.jpg" alt="">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        Rob de Boer
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog1 = false">
                                         Sluit
@@ -29,7 +32,7 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <div class="text-center">
+                    <div class="hvr-shrink text-center">
                         <v-dialog v-model="dialog2" dark transition="dialog-bottom-transition" content-class="dialogTwo" :width="width">
                             <template v-slot:activator=" { on, attrs }">
                                 <img src="./../assets/schilderij.jpeg" alt="" v-bind="attrs" v-on="on">
@@ -54,7 +57,7 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <div class="text-center">
+                    <div class="hvr-shrink text-center">
                         <v-dialog v-model="dialog3" transition="dialog-bottom-transition" width="600">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="" alt="" v-bind="attrs" v-on="on">
@@ -117,7 +120,7 @@
             <div class="panel">
                 <div class="content">
                     <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/film.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
@@ -130,37 +133,37 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <!-- <div class="text-center">
-    <v-dialog v-model="dialog4" transition="dialog-bottom-transition" width="60%">
-        <template v-slot:activator="{ on, attrs }">
-            <div v-bind="attrs" v-on="on">
-                Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus
-            </div>
-        </template>
-        <v-card class="modalImg sec">
-            <v-card-title class="headline grey lighten-2">
-            </v-card-title>
-            <v-card-text>
-                <div class="contentText">
-                    Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus consequat. Donec eget sapien eu lorem tristique tempor id a risus. Nunc dignissim semper enim non tristique. Maecenas sit amet aliquam eros. Nullam euismod varius ultrices.
-                    Mauris ut rutrum neque, at tristique mauris. Mauris et lacus rutrum augue dignissim ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales nibh at rutrum placerat. Proin lacinia nulla ut molestie viverra. Integer ornare ligula gravida molestie feugiat. Etiam fringilla, nisl sed fringilla scelerisque, ligula mi porttitor quam, vitae eleifend orci turpis non nibh. Curabitur vitae libero posuere, tristique risus vitae, porttitor metus. Etiam tincidunt, enim commodo laoreet maximus, turpis massa suscipit risus, vitae lobortis felis nibh vitae est. Curabitur porta cursus lorem eget tristique. Integer non lacus ut augue pretium aliquet eu ut ligula. Fusce blandit, ligula et interdum egestas, mauris elit congue odio, eget dapibus nulla arcu sed lacus.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nec dui in facilisis. Curabitur tincidunt molestie pellentesque. Praesent venenatis felis et ipsum ornare viverra. Etiam eu risus congue odio ultricies feugiat et vel velit. Maecenas rutrum purus at mi venenatis, non consectetur nunc mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas erat quam, imperdiet vel odio in, semper condimentum justo. Nulla interdum diam nec ante efficitur aliquet. Morbi in neque nec ex tincidunt laoreet vel sit amet est. Duis nisl augue, imperdiet sed lacinia quis, vulputate sed risus.
-                    Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus consequat. Donec eget sapien eu lorem tristique tempor id a risus. Nunc dignissim semper enim non tristique. Maecenas sit amet aliquam eros. Nullam euismod varius ultrices.
-                    Mauris ut rutrum neque, at tristique mauris. Mauris et lacus rutrum augue dignissim ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales nibh at rutrum placerat. Proin lacinia nulla ut molestie viverra. Integer ornare ligula gravida molestie feugiat. Etiam fringilla, nisl sed fringilla scelerisque, ligula mi porttitor quam, vitae eleifend orci turpis non nibh. Curabitur vitae libero posuere, tristique risus vitae, porttitor metus. Etiam tincidunt, enim commodo laoreet maximus, turpis massa suscipit risus, vitae lobortis felis nibh vitae est. Curabitur porta cursus lorem eget tristique. Integer non lacus ut augue pretium aliquet eu ut ligula. Fusce blandit, ligula et interdum egestas, mauris elit congue odio, eget dapibus nulla arcu sed lacus.
-                    Vivamus vitae justo purus. Mauris faucibus aliquet lobortis. Cras vel orci quis ligula sodales rutrum non at urna. Sed fringilla efficitur mauris, in pellentesque lorem sodales ut. Maecenas sit amet ex at ante ultricies dictum ut vel leo. Phasellus hendrerit et lorem vitae tempus. Vestibulum eros purus, malesuada et nisl et, vulputate pellentesque libero.
-                    Morbi aliquet, urna blandit dignissim suscipit, felis tellus dictum mi, eget semper est leo eget tellus. Curabitur vehicula, ipsum suscipit rhoncus placerat, elit magna lobortis urna, id scelerisque tortor nibh nec erat. Ut bibendum nisl sit amet lacus egestas, quis ornare nisl faucibus. Ut sed sapien id justo venenatis faucibus. Pellentesque vulputate dictum augue id pharetra. Proin feugiat sagittis sem sit amet egestas. Nunc sem massa, ultrices et elementum ut, facilisis eu risus. Morbi leo libero, facilisis quis congue at, finibus ac turpis. Vivamus convallis condimentum massa quis consequat. Donec sed arcu justo. Aenean non nisl magna. Donec quis tempus metus.
-                </div>
-            </v-card-text>
-            <v-divider></v-divider>
-            <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn color="primary" text @click="dialog4 = false">
-                    Sluit
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-    </v-dialog>
-</div> -->
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <div v-bind="attrs" v-on="on">
+                                    Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus
+                                </div>
+                            </template>
+                            <v-card class="modalImg sec">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <div class="contentText">
+                                        Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus consequat. Donec eget sapien eu lorem tristique tempor id a risus. Nunc dignissim semper enim non tristique. Maecenas sit amet aliquam eros. Nullam euismod varius ultrices.
+                                        Mauris ut rutrum neque, at tristique mauris. Mauris et lacus rutrum augue dignissim ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales nibh at rutrum placerat. Proin lacinia nulla ut molestie viverra. Integer ornare ligula gravida molestie feugiat. Etiam fringilla, nisl sed fringilla scelerisque, ligula mi porttitor quam, vitae eleifend orci turpis non nibh. Curabitur vitae libero posuere, tristique risus vitae, porttitor metus. Etiam tincidunt, enim commodo laoreet maximus, turpis massa suscipit risus, vitae lobortis felis nibh vitae est. Curabitur porta cursus lorem eget tristique. Integer non lacus ut augue pretium aliquet eu ut ligula. Fusce blandit, ligula et interdum egestas, mauris elit congue odio, eget dapibus nulla arcu sed lacus.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nec dui in facilisis. Curabitur tincidunt molestie pellentesque. Praesent venenatis felis et ipsum ornare viverra. Etiam eu risus congue odio ultricies feugiat et vel velit. Maecenas rutrum purus at mi venenatis, non consectetur nunc mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas erat quam, imperdiet vel odio in, semper condimentum justo. Nulla interdum diam nec ante efficitur aliquet. Morbi in neque nec ex tincidunt laoreet vel sit amet est. Duis nisl augue, imperdiet sed lacinia quis, vulputate sed risus.
+                                        Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus consequat. Donec eget sapien eu lorem tristique tempor id a risus. Nunc dignissim semper enim non tristique. Maecenas sit amet aliquam eros. Nullam euismod varius ultrices.
+                                        Mauris ut rutrum neque, at tristique mauris. Mauris et lacus rutrum augue dignissim ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales nibh at rutrum placerat. Proin lacinia nulla ut molestie viverra. Integer ornare ligula gravida molestie feugiat. Etiam fringilla, nisl sed fringilla scelerisque, ligula mi porttitor quam, vitae eleifend orci turpis non nibh. Curabitur vitae libero posuere, tristique risus vitae, porttitor metus. Etiam tincidunt, enim commodo laoreet maximus, turpis massa suscipit risus, vitae lobortis felis nibh vitae est. Curabitur porta cursus lorem eget tristique. Integer non lacus ut augue pretium aliquet eu ut ligula. Fusce blandit, ligula et interdum egestas, mauris elit congue odio, eget dapibus nulla arcu sed lacus.
+                                        Vivamus vitae justo purus. Mauris faucibus aliquet lobortis. Cras vel orci quis ligula sodales rutrum non at urna. Sed fringilla efficitur mauris, in pellentesque lorem sodales ut. Maecenas sit amet ex at ante ultricies dictum ut vel leo. Phasellus hendrerit et lorem vitae tempus. Vestibulum eros purus, malesuada et nisl et, vulputate pellentesque libero.
+                                        Morbi aliquet, urna blandit dignissim suscipit, felis tellus dictum mi, eget semper est leo eget tellus. Curabitur vehicula, ipsum suscipit rhoncus placerat, elit magna lobortis urna, id scelerisque tortor nibh nec erat. Ut bibendum nisl sit amet lacus egestas, quis ornare nisl faucibus. Ut sed sapien id justo venenatis faucibus. Pellentesque vulputate dictum augue id pharetra. Proin feugiat sagittis sem sit amet egestas. Nunc sem massa, ultrices et elementum ut, facilisis eu risus. Morbi leo libero, facilisis quis congue at, finibus ac turpis. Vivamus convallis condimentum massa quis consequat. Donec sed arcu justo. Aenean non nisl magna. Donec quis tempus metus.
+                                    </div>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog4 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <!-- ROW 4 -->
@@ -403,6 +406,34 @@ export default {
                 case 'md':
                     return 700
                 case 'lg':
+                    return 900
+                case 'xl':
+                    return 1000
+            }
+        },
+        widthPortret() {
+            switch (this.$vuetify.breakpoint.name) {
+                case 'xs':
+                    return 300
+                case 'sm':
+                    return 400
+                case 'md':
+                    return 600
+                case 'lg':
+                    return 600
+                case 'xl':
+                    return 800
+            }
+        },
+        widthLandscape() {
+            switch (this.$vuetify.breakpoint.name) {
+                case 'xs':
+                    return 500
+                case 'sm':
+                    return 600
+                case 'md':
+                    return 700
+                case 'lg':
                     return 700
                 case 'xl':
                     return 800
@@ -446,8 +477,9 @@ p {
     grid-auto-rows: minmax(20rem, auto);
 
     .panel:nth-child(1) {
-        // purple
-        background-color: #caa7bc;
+        // pink
+        background-color: #f7e0e1;
+
     }
 
     .panel:nth-child(2) {
@@ -461,8 +493,8 @@ p {
     }
 
     .panel:nth-child(4) {
-        // pink
-        background-color: #f7e0e1;
+        // purple
+        background-color: #caa7bc;
     }
 
     .panel:nth-child(5) {
@@ -477,8 +509,8 @@ p {
     }
 
     .panel:nth-child(7) {
-        // purple
-        background-color: #caa7bc;
+        // yellow
+        background-color: #fdfd96;
     }
 
     .panel:nth-child(8) {
@@ -727,16 +759,46 @@ p {
         height: auto;
         border-radius: 3px;
     }
+
+    &Portret {
+        img {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
 }
 
 // MODAL
 
+// IMG
 .modalImg {
     img {
         width: 40vw;
         height: auto;
         border-radius: 3px;
     }
+
+    &Portret {
+        img {
+            width: 28vw;
+            height: auto;
+        }
+    }
+
+    &landscape {
+        img {
+            width: 20%;
+            height: auto;
+        }
+    }
+}
+
+// AUTHOR
+
+.author {
+    font-size: 1vw;
+    font-weight: 500;
 }
 
 // TITLE AUDIO AND VIDEO
@@ -748,10 +810,31 @@ p {
 // TEXT
 
 .contentText {
+    padding: 1rem;
     font-size: 1.5rem;
     font-weight: 200;
 }
 
+
+// HOVER EFFECT
+.hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-shrink:hover,
+.hvr-shrink:focus,
+.hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
 
 @supports (display: grid) {
     .wrapper>* {
@@ -785,6 +868,20 @@ p {
         img {
             width: 100%;
         }
+
+        &Portret {
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+
+        &landscape {
+            img {
+                width: 30%;
+                height: auto;
+            }
+        }
     }
 }
 
@@ -808,6 +905,22 @@ p {
 
         h5 {
             font-size: 1rem;
+        }
+    }
+
+    .modalImg {
+        &Portret {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &landscape {
+            img {
+                width: 50%;
+                height: auto;
+            }
         }
     }
 }
