@@ -170,7 +170,7 @@
             <div class="panel">
                 <div class="content">
                     <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        <source src="./../assets/content/video/film75mb.mp4" type="video/mp4"> Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
@@ -418,11 +418,11 @@ export default {
                 case 'sm':
                     return 400
                 case 'md':
-                    return 600
+                    return 700
                 case 'lg':
-                    return 600
+                    return 700
                 case 'xl':
-                    return 800
+                    return 900
             }
         },
         widthLandscape() {
@@ -868,12 +868,12 @@ p {
 
     .modalImg {
         img {
-            width: 100%;
+            width: 80%;
         }
 
         &Portret {
             img {
-                width: 90%;
+                width: 65%;
                 height: auto;
             }
         }
