@@ -5,7 +5,7 @@
             <div class="panel">
                 <div class="contentPortret">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog1" dark transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/img/rwdeBoer.jpg" alt="" v-bind="attrs" v-on="on">
                             </template>
@@ -33,7 +33,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog2" dark transition="dialog-bottom-transition" content-class="dialogTwo" :width="width">
+                        <v-dialog v-model="dialog2" transition="dialog-bottom-transition" content-class="dialogTwo" :width="width">
                             <template v-slot:activator=" { on, attrs }">
                                 <img src="./../assets/schilderij.jpeg" alt="" v-bind="attrs" v-on="on">
                             </template>
@@ -60,37 +60,17 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog3" transition="dialog-bottom-transition" width="600">
-                            <template v-slot:activator="{ on, attrs }">
-                                <img src="" alt="" v-bind="attrs" v-on="on">
-                            </template>
-                            <v-card class="modalImg sec">
-                                <v-card-title class="headline grey lighten-2">
-                                </v-card-title>
-                                <v-card-text>
-                                    <img src="" alt="">
-                                </v-card-text>
-                                <v-divider></v-divider>
-                                <v-card-actions>
-                                    <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog3 = false">
-                                        Sluit
-                                    </v-btn>
-                                </v-card-actions>
-                            </v-card>
-                        </v-dialog>
-                    </div>
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/TinekevanGroen.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
             <!-- ROW 2 -->
             <div class="panel">
-                <p class="titleAorV">
-                </p>
                 <div class="content">
-                    <audio controls>
-                        <source src="./../assets/content/audio/first.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/Hanekamp1.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
             <div class="title">
@@ -111,24 +91,121 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <audio controls>
-                        <source src="./../assets/content/audio/first.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
+                    <video width="320" height="240" controls>
+                        <source src="./../assets/content/video/Hanekamp2.mp4" type="video/mp4"> Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
             <!-- ROW 3 -->
             <div class="panel">
                 <div class="content">
                     <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/film.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        <source src="./../assets/content/video/Hanekamp3.mp4" type="video/mp4"> Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
-                    <audio controls>
-                        <source src="./../assets/content/audio/first.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <!-- ROW 4 -->
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <!-- ROW 5 -->
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <!-- ROW 6 -->
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <!-- ROW 7 -->
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
                 </div>
             </div>
             <div class="panel">
@@ -166,21 +243,6 @@
                     </div>
                 </div>
             </div>
-            <!-- ROW 4 -->
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/film75mb.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/film62mb.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
             <div class="panel">
                 <div class="content">
                     <video width="320" height="240" controls>
@@ -190,161 +252,10 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
+                    <audio controls>
+                        <source src="./../assets/content/audio/first.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
                 </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <!-- ROW 5 -->
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <!-- ROW 6 -->
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <!-- ROW 7 -->
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <video width="320" height="240" controls>
-                    </video>
-                </div>
-            </div>
-            <div class="panel">
             </div>
         </div>
     </div>
