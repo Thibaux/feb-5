@@ -45,6 +45,9 @@
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        George Alexander Swildens
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog2 = false">
                                         Sluit
@@ -102,9 +105,6 @@
                     <p>Thibaux Swildens
                         <a href="https://github.com/Thibaux" target="_blank">
                             <img src="./../assets/socials/github.png" alt="github_link">
-                        </a>
-                        <a href="https://www.linkedin.com/in/thibaux-swildens-17ba80ba/" target="_blank">
-                            <img src="./../assets/socials/linked.png" alt="linkedin_link">
                         </a>
                     </p>
                 </footer>
@@ -797,8 +797,10 @@ p {
 // AUTHOR
 
 .author {
-    font-size: 1vw;
+    font-size: 125%;
     font-weight: 500;
+    margin: 0;
+    margin-left: 0.5rem;
 }
 
 // TITLE AUDIO AND VIDEO
