@@ -33,7 +33,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/img/oma.jpg" alt="" v-bind="attrs" v-on="on">
                             </template>
