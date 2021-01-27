@@ -3,37 +3,9 @@
         <div class="wrapper">
             <!-- ROw 1 -->
             <div class="panel">
-                <div class="contentPortret">
-                    <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" :width="widthPortret">
-                            <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/img/rwdeBoer.jpg" alt="" v-bind="attrs" v-on="on">
-                            </template>
-                            <v-card fluid fill-width class="modalImgPortret">
-                                <v-card-title class="headline grey lighten-2">
-                                </v-card-title>
-                                <v-card-text>
-                                    <img src="./../assets/content/img/rwdeBoer.jpg" alt="">
-                                </v-card-text>
-                                <v-divider></v-divider>
-                                <v-card-actions>
-                                    <p class="author">
-                                        Rob de Boer
-                                    </p>
-                                    <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog1 = false">
-                                        Sluit
-                                    </v-btn>
-                                </v-card-actions>
-                            </v-card>
-                        </v-dialog>
-                    </div>
-                </div>
-            </div>
-            <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog2" transition="dialog-bottom-transition" content-class="dialogTwo" :width="width">
+                        <v-dialog v-model="dialog2" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator=" { on, attrs }">
                                 <img src="./../assets/schilderij.jpeg" alt="" v-bind="attrs" v-on="on">
                             </template>
@@ -60,17 +32,101 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/TinekevanGroen.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/img/oma.jpg" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <p class="contentText">
+                                    George ik ben je dankbaar.
+                                    <br>
+                                    Dat wij meer dan <b>60 JAAR</b> bij elkaar zijn gebleven.
+                                    <br>
+                                    Ik zal proosten op je ,waar je ook bent. Het gaat je goed.
+                                    <br>
+                                    <br>
+                                    Je lieve Jeanet.
+                                </p>
+                                <v-card-text>
+                                    <img src="./../assets/content/img/oma.jpg" alt="">
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Jeanet
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog1 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog3" transition="dialog-bottom-transition" :width="width">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/video/tumbs/TinekevanGroen.png" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImgPortret">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <video width="1280" height="720" controls v-bind="attrs" v-on="on">
+                                        <source src="./../assets/content/video/TinekevanGroen.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                    </video>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Tineke & Gerard van Groen
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog3 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <!-- ROW 2 -->
             <div class="panel">
                 <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/Hanekamp1.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/video/tumbs/Hanekamp1.png" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImgPortret">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <video width="848" height="480" controls>
+                                        <source src="./../assets/content/video/Hanekamp1.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                    </video>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Familie Hanekamp
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog4 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <div class="title">
@@ -82,7 +138,8 @@
                     <h2>George Alexander Swildens</h2>
                 </div>
                 <footer>
-                    <p>Thibaux Swildens
+                    <p>
+                        Thibaux Swildens
                         <a href="https://github.com/Thibaux" target="_blank">
                             <img src="./../assets/socials/github.png" alt="github_link">
                         </a>
@@ -91,21 +148,91 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/Hanekamp2.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog5" transition="dialog-bottom-transition" :width="width">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/video/tumbs/Hanekamp2.png" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImgPortret">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <video width="320" height="240" controls>
+                                        <source src="./../assets/content/video/Hanekamp2.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                    </video>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Familie Hanekamp
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog5= false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <!-- ROW 3 -->
             <div class="panel">
                 <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/Hanekamp3.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog6" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/video/tumbs/Hanekamp3.png" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImgPortret">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <video width="320" height="240" controls v-bind="attrs" v-on="on">
+                                        <source src="./../assets/content/video/Hanekamp3.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                    </video>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Familie Hanekamp
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog6 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog7" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/img/rwdeBoer.jpg" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImgPortret">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <img src="./../assets/content/img/rwdeBoer.jpg" alt="">
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Rob de Boer
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog7 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <div class="panel">
@@ -211,7 +338,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog40" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
                                     Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus
@@ -234,7 +361,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog4 = false">
+                                    <v-btn color="primary" text @click="dialog40 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -325,11 +452,11 @@ export default {
         widthPortret() {
             switch (this.$vuetify.breakpoint.name) {
                 case 'xs':
-                    return 300
-                case 'sm':
                     return 400
+                case 'sm':
+                    return 500
                 case 'md':
-                    return 700
+                    return 600
                 case 'lg':
                     return 700
                 case 'xl':
@@ -388,14 +515,13 @@ p {
     grid-auto-rows: minmax(20rem, auto);
 
     .panel:nth-child(1) {
-        // pink
-        background-color: #f7e0e1;
-
+        // yellow
+        background-color: #fdfd96;
     }
 
     .panel:nth-child(2) {
-        // yellow
-        background-color: #fdfd96;
+        // pink
+        background-color: #f7e0e1;
     }
 
     .panel:nth-child(3) {
@@ -714,18 +840,11 @@ p {
     margin-left: 0.5rem;
 }
 
-// TITLE AUDIO AND VIDEO
-
-.titleAorV {
-    color: black;
-}
-
 // TEXT
 
 .contentText {
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 200;
+    padding: 1vw;
+    font-size: 1.3rem;
 }
 
 
@@ -748,6 +867,14 @@ p {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
 }
+
+
+// VIDEO WITH
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
 
 @supports (display: grid) {
     .wrapper>* {
