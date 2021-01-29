@@ -40,7 +40,7 @@ export default {
     },
     data() {
         let now = new Date();
-        let reveal = new Date("January 20 2021 21:00");
+        let reveal = new Date( "January 20 2021 21:00" );
 
         return {
             counting: false,
@@ -65,7 +65,6 @@ export default {
 </script>
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;447&display=swap');
-
 
 * {
     margin: 0;
