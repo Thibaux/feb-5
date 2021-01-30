@@ -202,34 +202,6 @@
                     <div class="hvr-shrink text-center">
                         <v-dialog v-model="dialog8" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/img/rwdeBoer.jpg" alt="" v-bind="attrs" v-on="on">
-                            </template>
-                            <v-card fluid fill-width class="modalImgPortret">
-                                <v-card-title class="headline grey lighten-2">
-                                </v-card-title>
-                                <v-card-text>
-                                    <img src="./../assets/content/img/rwdeBoer.jpg" alt="">
-                                </v-card-text>
-                                <v-divider></v-divider>
-                                <v-card-actions>
-                                    <p class="author">
-                                        Rob de Boer
-                                    </p>
-                                    <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog8 = false">
-                                        Sluit
-                                    </v-btn>
-                                </v-card-actions>
-                            </v-card>
-                        </v-dialog>
-                    </div>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog8" transition="dialog-bottom-transition" :width="widthPortret">
-                            <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
                                     George hebben wij goed gekend,en spraken hem regelmatig.
                                     Zowel in familie kring ,als ook op het tuin park, George was altijd een bijzondere man ,
@@ -274,6 +246,34 @@
                     </div>
                 </div>
             </div>
+            <div class="panel">
+                <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog8" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/img/rwdeBoer.jpg" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImgPortret">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <img src="./../assets/content/img/rwdeBoer.jpg" alt="">
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Rob de Boer
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog8 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
+                </div>
+            </div>
             <!-- ROW 4 -->
             <div class="panel">
                 <div class="content">
@@ -290,9 +290,6 @@
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
-                                    <p class="author">
-                                        Tineke & Gerard van Groen
-                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog11 = false">
                                         Sluit
@@ -540,15 +537,15 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/video/tumbs/Hanekamp1.png" alt="" v-bind="attrs" v-on="on">
                             </template>
-                            <v-card fluid fill-width class="modalImg">
+                            <v-card fluid fill-width class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <video width="848" height="480" controls>
+                                    <video width="400" controls>
                                         <source src="./../assets/content/video/Hanekamp1.mp4" type="video/mp4"> Your browser does not support the video tag.
                                     </video>
                                 </v-card-text>
@@ -812,13 +809,13 @@ p {
     }
 
     .panel:nth-child(8) {
-        // yellow
-        background-color: #fdfd96;
+        // red
+        background-color: #ff6961;
     }
 
     .panel:nth-child(9) {
-        // red
-        background-color: #ff6961;
+        // yellow
+        background-color: #fdfd96;
     }
 
     .panel:nth-child(10) {
@@ -1082,6 +1079,11 @@ p {
             width: 10vw;
             height: auto;
         }
+
+        video {
+            max-width: 100%;
+            height: auto;
+        }
     }
 
     &landscape {
@@ -1127,13 +1129,6 @@ p {
 .hvr-shrink:active {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
-}
-
-
-// VIDEO WITH
-video {
-    width: 100% !important;
-    height: auto !important;
 }
 
 
