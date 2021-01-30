@@ -5,7 +5,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog2" transition="dialog-bottom-transition" :width="width">
+                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator=" { on, attrs }">
                                 <img src="./../assets/schilderij.jpeg" alt="" v-bind="attrs" v-on="on">
                             </template>
@@ -21,7 +21,7 @@
                                         George Swildens
                                     </p>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog2 = false">
+                                    <v-btn color="primary" text @click="dialog1 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -33,7 +33,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog1" transition="dialog-bottom-transition" :width="width">
+                        <v-dialog v-model="dialog2" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/img/oma.jpg" alt="" v-bind="attrs" v-on="on">
                             </template>
@@ -53,7 +53,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog1 = false">
+                                    <v-btn color="primary" text @click="dialog2 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -96,7 +96,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog13" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
                                     BIEKE TAART
@@ -106,14 +106,14 @@
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <div class="contentText">
+                                    <div>
                                         BIEKE TAART
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog13 = false">
+                                    <v-btn color="primary" text @click="dialog4 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -142,7 +142,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog10" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog5" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
                                     BARTELINE
@@ -159,7 +159,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog10 = false">
+                                    <v-btn color="primary" text @click="dialog5 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -172,7 +172,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog7" transition="dialog-bottom-transition" :width="width">
+                        <v-dialog v-model="dialog6" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/img/dyl.png" alt="" v-bind="attrs" v-on="on">
                             </template>
@@ -188,7 +188,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog7 = false">
+                                    <v-btn color="primary" text @click="dialog6 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -200,17 +200,15 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog8" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog7" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    George hebben wij goed gekend,en spraken hem regelmatig.
-                                    Zowel in familie kring ,als ook op het tuin park, George was altijd een bijzondere man ,
-                                    Hij had altijd wel een verhaal,waarin hij duidelijk zijn filosofische inslag tot ons liet komen.
-                                    Dat deed hij heel goed,en vertelde zijn verhaal zo,dat je daar ook nog wat van kon leren.
-                                    Het creatieve van George ,het schilderwerk dat vonden wij iets apart,en zeer mooi.
-                                    Het resultaat daar van kun je zien, op de deuren van het verzorging huis de oude raai.
-                                    George zal in ons herinnering blijven.
-                                    Groeten, Elisabeth en Eric Koppe
+                                    <p class="dashText">
+                                        George hebben wij goed gekend,en spraken hem regelmatig.
+                                        <br>
+                                        Zowel in familie kring ,als ook op het tuin park, George was altijd een bijzondere man ,
+                                        Hij had altijd wel een verhaal,waarin hij duidelijk zijn filosofische inslag tot ons liet komen...
+                                    </p>
                                 </div>
                             </template>
                             <v-card class="modalImg">
@@ -237,7 +235,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog8 = false">
+                                    <v-btn color="primary" text @click="dialog7 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -247,7 +245,7 @@
                 </div>
             </div>
             <div class="panel">
-                <div class="content">
+                <div class="contentPortretMid">
                     <div class="hvr-shrink text-center">
                         <v-dialog v-model="dialog8" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
@@ -276,9 +274,9 @@
             </div>
             <!-- ROW 4 -->
             <div class="panel">
-                <div class="content">
+                <div class="contentPortret">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog11" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog9" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/img/albertine.png" alt="" v-bind="attrs" v-on="on">
                             </template>
@@ -291,7 +289,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog11 = false">
+                                    <v-btn color="primary" text @click="dialog9 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -303,7 +301,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog9" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog10" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
                                     WIEKE
@@ -320,7 +318,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog9 = false">
+                                    <v-btn color="primary" text @click="dialog10 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -332,7 +330,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog9" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog11" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
                                     YVONNE
@@ -349,7 +347,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog9 = false">
+                                    <v-btn color="primary" text @click="dialog11 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -361,7 +359,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog14" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog12" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
                                     YVONNE
@@ -378,70 +376,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog14 = false">
-                                        Sluit
-                                    </v-btn>
-                                </v-card-actions>
-                            </v-card>
-                        </v-dialog>
-                    </div>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
-                    <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog9" transition="dialog-bottom-transition" :width="widthPortret">
-                            <template v-slot:activator="{ on, attrs }">
-                                <div v-bind="attrs" v-on="on">
-                                    ANNEKE
-                                </div>
-                            </template>
-                            <v-card class="modalImg">
-                                <v-card-title class="headline grey lighten-2">
-                                </v-card-title>
-                                <v-card-text>
-                                    <div class="contentText">
-                                        ANNEKE
-                                    </div>
-                                </v-card-text>
-                                <v-divider></v-divider>
-                                <v-card-actions>
-                                    <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog9 = false">
-                                        Sluit
-                                    </v-btn>
-                                </v-card-actions>
-                            </v-card>
-                        </v-dialog>
-                    </div>
-                </div>
-            </div>
-            <!-- ROW 5 -->
-            <div class="panel">
-                <div class="content">
-                    <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog9" transition="dialog-bottom-transition" :width="widthPortret">
-                            <template v-slot:activator="{ on, attrs }">
-                                <div v-bind="attrs" v-on="on">
-                                    SANDER
-                                </div>
-                            </template>
-                            <v-card class="modalImg">
-                                <v-card-title class="headline grey lighten-2">
-                                </v-card-title>
-                                <v-card-text>
-                                    <div class="contentText">
-                                        SANDER
-                                    </div>
-                                </v-card-text>
-                                <v-divider></v-divider>
-                                <v-card-actions>
-                                    <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog9 = false">
+                                    <v-btn color="primary" text @click="dialog12 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -453,7 +388,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog9" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog39" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
                                     RON
@@ -470,7 +405,7 @@
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog9 = false">
+                                    <v-btn color="primary" text @click="dialog39 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -482,25 +417,54 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog12" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog13" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/video/tumbs/Hanekamp3.png" alt="" v-bind="attrs" v-on="on">
+                                <div v-bind="attrs" v-on="on">
+                                    ANNEKE
+                                </div>
                             </template>
-                            <v-card fluid fill-width class="modalImg">
+                            <v-card class="modalImg">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <video width="848" height="480" controls>
-                                        <source src="./../assets/content/video/Hanekamp3.mp4" type="video/mp4"> Your browser does not support the video tag.
-                                    </video>
+                                    <div class="contentText">
+                                        ANNEKE
+                                    </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
-                                    <p class="author">
-                                        Familie Hanekamp
-                                    </p>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog12 = false">
+                                    <v-btn color="primary" text @click="dialog13 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW 5 -->
+            <div class="panel">
+                <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog14" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <div v-bind="attrs" v-on="on">
+                                    SANDER
+                                </div>
+                            </template>
+                            <v-card class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <div class="contentText">
+                                        SANDER
+                                    </div>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog14 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -511,10 +475,119 @@
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog15" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <div v-bind="attrs" v-on="on">
+                                    RON
+                                </div>
+                            </template>
+                            <v-card class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <div class="contentText">
+                                        RON
+                                    </div>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog15 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog16" transition="dialog-bottom-transition" :width="width">
+                            <template v-slot:activator="{ on, attrs }">
+                                <div v-bind="attrs" v-on="on">
+                                    RON
+                                </div>
+                            </template>
+                            <v-card class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <div class="contentText">
+                                        RON
+                                    </div>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog16 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog17" transition="dialog-bottom-transition" :width="width">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/video/tumbs/Hanekamp3.png" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <video width="350" controls>
+                                        <source src="./../assets/content/video/Hanekamp3.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                    </video>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Familie Hanekamp
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog17 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog18" transition="dialog-bottom-transition" :width="width">
+                            <template v-slot:activator="{ on, attrs }">
+                                <div v-bind="attrs" v-on="on">
+                                    RON
+                                </div>
+                            </template>
+                            <v-card class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <div class="contentText">
+                                        RON
+                                    </div>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog18 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <div class="panel">
@@ -537,7 +610,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="width">
+                        <v-dialog v-model="dialog19" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/video/tumbs/Hanekamp1.png" alt="" v-bind="attrs" v-on="on">
                             </template>
@@ -555,7 +628,7 @@
                                         Familie Hanekamp
                                     </p>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog4 = false">
+                                    <v-btn color="primary" text @click="dialog19 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -1043,8 +1116,8 @@ p {
 // CONTENT
 
 .content {
-    width: 95%;
-    height: 95%;
+    height: 100%;
+    top: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1057,9 +1130,16 @@ p {
 
     &Portret {
         img {
-            width: 10%;
+            width: 50%;
             height: auto;
             border-radius: 5px;
+        }
+
+        &Mid {
+            img {
+                width: 15vw;
+                height: auto;
+            }
         }
     }
 }
@@ -1074,17 +1154,21 @@ p {
         border-radius: 3px;
     }
 
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
     &Portret {
         img {
-            width: 10vw;
+            width: 30vw;
             height: auto;
         }
 
-        video {
-            max-width: 100%;
-            height: auto;
-        }
+
     }
+
+
 
     &landscape {
         img {
@@ -1105,9 +1189,16 @@ p {
 
 // TEXT
 
+// dashboard text
+.dashText {
+    padding: 2vw;
+    font-size: 1.2rem;
+}
+
+// modal text
 .contentText {
     padding: 1vw;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 
@@ -1153,19 +1244,6 @@ p {
     .wrapper {
         grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
         grid-auto-rows: minmax(20rem, auto);
-
-        // .panel:nth-child(4) {
-        // background-color: #fdfd96;
-        // }
-        // .panel:nth-child(8) {
-        // background-color: #ff6961;
-        // }
-        // .panel:nth-child(9) {
-        // background-color: #aec6cf;
-        // }
-        // .panel:nth-child(10) {
-        // background-color: #ff6961;
-        // }
     }
 
     .modalImg {

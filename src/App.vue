@@ -40,8 +40,8 @@ export default {
     },
     data() {
         let now = new Date();
-        let reveal = new Date( "Febuari 5 2021 21:00" );
-        // let reveal = new Date( "januari 5 2021 21:00" );
+        // let reveal = new Date( "Febuari 5 2021 21:00" );
+        let reveal = new Date( "januari 5 2021 21:00" );
 
         return {
             counting: false,
