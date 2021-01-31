@@ -417,18 +417,26 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog13" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog13" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    ANNEKE
+                                    <img src="./../assets/content/img/annekevanBeek.jpg" alt="" v-bind="attrs" v-on="on">
                                 </div>
                             </template>
                             <v-card class="modalImg">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
+                                    <img src="./../assets/content/img/annekevanBeek.jpg" alt="">
                                     <div class="contentText">
-                                        ANNEKE
+                                        <i>
+                                            Een schilderij dat ik in het atelier bij George maakte. Dit schilderij vond ik aansluiten bij het
+                                            onderwerp: "neem er één op mij".
+                                            Ik heb het schilderij nabewerkt op de computer en als je goed kijkt zie je George in het glas met ons meekijken.
+                                            <br>
+                                            <br>
+                                            Proost, op goede herinneringen en op het leven!
+                                        </i>
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
@@ -767,7 +775,7 @@ export default {
     },
     computed: {
         width() {
-            switch ( this.$vuetify.breakpoint.name ) {
+            switch (this.$vuetify.breakpoint.name) {
                 case 'xs':
                     return 500
                 case 'sm':
@@ -781,7 +789,7 @@ export default {
             }
         },
         widthPortret() {
-            switch ( this.$vuetify.breakpoint.name ) {
+            switch (this.$vuetify.breakpoint.name) {
                 case 'xs':
                     return 400
                 case 'sm':
@@ -795,7 +803,7 @@ export default {
             }
         },
         widthLandscape() {
-            switch ( this.$vuetify.breakpoint.name ) {
+            switch (this.$vuetify.breakpoint.name) {
                 case 'xs':
                     return 500
                 case 'sm':
@@ -1192,13 +1200,13 @@ p {
 // dashboard text
 .dashText {
     padding: 2vw;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 // modal text
 .contentText {
     padding: 1vw;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 
