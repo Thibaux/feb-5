@@ -22,9 +22,9 @@
                 </div>
             </template>
         </countdown>
-        <div v-else>
-            <GridFull></GridFull>
-        </div>
+        <!-- <div v-else>
+    <GridFull></GridFull>
+</div> -->
     </div>
 </template>
 <script>
