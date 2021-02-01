@@ -207,7 +207,9 @@
                                         George hebben wij goed gekend,en spraken hem regelmatig.
                                         <br>
                                         Zowel in familie kring ,als ook op het tuin park, George was altijd een bijzondere man ,
-                                        Hij had altijd wel een verhaal,waarin hij duidelijk zijn filosofische inslag tot ons liet komen...
+                                        Hij had altijd wel een verhaal,waarin hij duidelijk zijn filosofische inslag tot ons liet komen
+                                        <br>
+                                        ...
                                     </p>
                                 </div>
                             </template>
@@ -362,15 +364,29 @@
                         <v-dialog v-model="dialog12" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    YVONNE
+                                    George Swildens, De kunstenaar van de Creatieve expressie waar de woorden tekort schoten net als zijn leven.
+                                    <br>
+                                    ...
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgLandscape">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
                                     <div class="contentText">
-                                        YVONNE
+                                        George Swildens, De kunstenaar van de Creatieve expressie waar de woorden tekort schoten net als zijn leven.
+                                        <br>
+                                        Zijn beeldende begeleiding als kunstenaar ging niet alleen om de kunst alleen, het maken van kunst was voor hem de overdragende trap. Het vormgeven met o.a beeldend materiaal was altijd dienstbaar aan het emotionele proces van George Swildens.
+                                        <br>
+                                        Het maken van kunst was zijn doel op zich, het was een doel van creatieve expressie in een andere taal: de taal van beelden en symbolen om zich te kunnen uiten als woorden tekort schieten. Het moment dat iemand open stond voor beeldende begeleiding van George was daar “opeens” het beeldende materiaal: de verf, het gekleurde papier, de potloden.
+                                        <br>
+                                        Dat deed iets in het contact tussen zijn vele cursisten van George als begeleider, het werd informeler, laagdrempeliger, gewoner. Bezig zijn met kleuren, beelden, symbolen en verhalen doet beroep op het non-verbale, op het gevoelsmatige, op het hart, op plezier en het maakte verbinding met het “gezonde deel” van mensen: hun essentie die los staat van een ziekte of een tekort komingen.
+                                        <br>
+                                        <br>
+                                        Mathijs Langkemper.
+                                        <br>
+                                        <br>
+                                        <img src="./../assets/content/img/mathijs.jpg" alt="">
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
@@ -391,19 +407,27 @@
                         <v-dialog v-model="dialog39" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    RON
+                                    <img src="./../assets/content/img/pa.jpg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
                                     <div class="contentText">
-                                        RON
+                                        <img src="./../assets/content/img/pa.jpg" alt="">
+                                        <p class="pa">
+                                            Onder het wijze oog van George’s Boeddha
+                                            <br>
+                                            proosten we op zijn leven, inspiratie en wijsheid.
+                                        </p>
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        Liesbeth en Archim
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog39 = false">
                                         Sluit
@@ -420,7 +444,7 @@
                         <v-dialog v-model="dialog13" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    <img src="./../assets/content/img/annekevanBeek.jpg" alt="" v-bind="attrs" v-on="on">
+                                    <img src="./../assets/content/img/annekevanBeek.jpg" alt="">
                                 </div>
                             </template>
                             <v-card class="modalImg">
@@ -441,6 +465,9 @@
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        Anneke van Beek
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog13 = false">
                                         Sluit
@@ -487,7 +514,7 @@
                         <v-dialog v-model="dialog15" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    RON
+                                    <img src="./../assets/content/img/guido.jpeg" alt="">
                                 </div>
                             </template>
                             <v-card class="modalImg">
@@ -495,11 +522,14 @@
                                 </v-card-title>
                                 <v-card-text>
                                     <div class="contentText">
-                                        RON
+                                        <img src="./../assets/content/img/guido.jpeg" alt="">
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        “Generatie M” door Mees, Ilse en Guido.
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog15 = false">
                                         Sluit
@@ -571,30 +601,13 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog18" transition="dialog-bottom-transition" :width="width">
-                            <template v-slot:activator="{ on, attrs }">
-                                <div v-bind="attrs" v-on="on">
-                                    RON
-                                </div>
-                            </template>
-                            <v-card class="modalImg">
-                                <v-card-title class="headline grey lighten-2">
-                                </v-card-title>
-                                <v-card-text>
-                                    <div class="contentText">
-                                        RON
-                                    </div>
-                                </v-card-text>
-                                <v-divider></v-divider>
-                                <v-card-actions>
-                                    <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog18 = false">
-                                        Sluit
-                                    </v-btn>
-                                </v-card-actions>
-                            </v-card>
-                        </v-dialog>
+                    <div class="audioDiv">
+                        <audio controls>
+                            <source src="./../assets/content/audio/mam.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                        </audio>
+                        <p class="authorAudio">
+                            Tjarda Dubois
+                        </p>
                     </div>
                 </div>
             </div>
@@ -618,15 +631,15 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog19" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog18" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/video/tumbs/Hanekamp1.png" alt="" v-bind="attrs" v-on="on">
                             </template>
-                            <v-card fluid fill-width class="modalImgPortret">
+                            <v-card fluid fill-width class="modalImg">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <video width="400" controls>
+                                    <video width="350" controls>
                                         <source src="./../assets/content/video/Hanekamp1.mp4" type="video/mp4"> Your browser does not support the video tag.
                                     </video>
                                 </v-card-text>
@@ -636,7 +649,7 @@
                                         Familie Hanekamp
                                     </p>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog19 = false">
+                                    <v-btn color="primary" text @click="dialog18 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -676,51 +689,14 @@
             </div>
             <div class="panel">
                 <div class="content">
-                    <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog40" transition="dialog-bottom-transition" :width="widthPortret">
-                            <template v-slot:activator="{ on, attrs }">
-                                <div v-bind="attrs" v-on="on">
-                                    Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus
-                                </div>
-                            </template>
-                            <v-card class="modalImg">
-                                <v-card-title class="headline grey lighten-2">
-                                </v-card-title>
-                                <v-card-text>
-                                    <div class="contentText">
-                                        Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus consequat. Donec eget sapien eu lorem tristique tempor id a risus. Nunc dignissim semper enim non tristique. Maecenas sit amet aliquam eros. Nullam euismod varius ultrices.
-                                        Mauris ut rutrum neque, at tristique mauris. Mauris et lacus rutrum augue dignissim ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales nibh at rutrum placerat. Proin lacinia nulla ut molestie viverra. Integer ornare ligula gravida molestie feugiat. Etiam fringilla, nisl sed fringilla scelerisque, ligula mi porttitor quam, vitae eleifend orci turpis non nibh. Curabitur vitae libero posuere, tristique risus vitae, porttitor metus. Etiam tincidunt, enim commodo laoreet maximus, turpis massa suscipit risus, vitae lobortis felis nibh vitae est. Curabitur porta cursus lorem eget tristique. Integer non lacus ut augue pretium aliquet eu ut ligula. Fusce blandit, ligula et interdum egestas, mauris elit congue odio, eget dapibus nulla arcu sed lacus.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nec dui in facilisis. Curabitur tincidunt molestie pellentesque. Praesent venenatis felis et ipsum ornare viverra. Etiam eu risus congue odio ultricies feugiat et vel velit. Maecenas rutrum purus at mi venenatis, non consectetur nunc mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas erat quam, imperdiet vel odio in, semper condimentum justo. Nulla interdum diam nec ante efficitur aliquet. Morbi in neque nec ex tincidunt laoreet vel sit amet est. Duis nisl augue, imperdiet sed lacinia quis, vulputate sed risus.
-                                        Vestibulum in ligula enim. Nam quis tortor sed quam tempor accumsan non eu dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque imperdiet massa vitae cursus consequat. Donec eget sapien eu lorem tristique tempor id a risus. Nunc dignissim semper enim non tristique. Maecenas sit amet aliquam eros. Nullam euismod varius ultrices.
-                                        Mauris ut rutrum neque, at tristique mauris. Mauris et lacus rutrum augue dignissim ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales nibh at rutrum placerat. Proin lacinia nulla ut molestie viverra. Integer ornare ligula gravida molestie feugiat. Etiam fringilla, nisl sed fringilla scelerisque, ligula mi porttitor quam, vitae eleifend orci turpis non nibh. Curabitur vitae libero posuere, tristique risus vitae, porttitor metus. Etiam tincidunt, enim commodo laoreet maximus, turpis massa suscipit risus, vitae lobortis felis nibh vitae est. Curabitur porta cursus lorem eget tristique. Integer non lacus ut augue pretium aliquet eu ut ligula. Fusce blandit, ligula et interdum egestas, mauris elit congue odio, eget dapibus nulla arcu sed lacus.
-                                        Vivamus vitae justo purus. Mauris faucibus aliquet lobortis. Cras vel orci quis ligula sodales rutrum non at urna. Sed fringilla efficitur mauris, in pellentesque lorem sodales ut. Maecenas sit amet ex at ante ultricies dictum ut vel leo. Phasellus hendrerit et lorem vitae tempus. Vestibulum eros purus, malesuada et nisl et, vulputate pellentesque libero.
-                                        Morbi aliquet, urna blandit dignissim suscipit, felis tellus dictum mi, eget semper est leo eget tellus. Curabitur vehicula, ipsum suscipit rhoncus placerat, elit magna lobortis urna, id scelerisque tortor nibh nec erat. Ut bibendum nisl sit amet lacus egestas, quis ornare nisl faucibus. Ut sed sapien id justo venenatis faucibus. Pellentesque vulputate dictum augue id pharetra. Proin feugiat sagittis sem sit amet egestas. Nunc sem massa, ultrices et elementum ut, facilisis eu risus. Morbi leo libero, facilisis quis congue at, finibus ac turpis. Vivamus convallis condimentum massa quis consequat. Donec sed arcu justo. Aenean non nisl magna. Donec quis tempus metus.
-                                    </div>
-                                </v-card-text>
-                                <v-divider></v-divider>
-                                <v-card-actions>
-                                    <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog40 = false">
-                                        Sluit
-                                    </v-btn>
-                                </v-card-actions>
-                            </v-card>
-                        </v-dialog>
-                    </div>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
-                    <video width="320" height="240" controls>
-                        <source src="./../assets/content/video/first.mp4" type="video/mp4"> Your browser does not support the video tag.
-                    </video>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
-                    <audio controls>
-                        <source src="./../assets/content/audio/first.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                    </audio>
                 </div>
             </div>
         </div>
@@ -1176,11 +1152,9 @@ p {
 
     }
 
-
-
-    &landscape {
+    &Landscape {
         img {
-            width: 40vw;
+            width: 30vw;
             height: auto;
         }
     }
@@ -1209,6 +1183,14 @@ p {
     font-size: 1.3rem;
 }
 
+// modal text align left
+.pa {
+    display: flex;
+    width: 85%;
+    margin-left: 15%;
+    margin-top: 1rem;
+    text-align: left;
+}
 
 // HOVER EFFECT
 .hvr-shrink {
@@ -1234,12 +1216,25 @@ p {
 // TEXT OMA
 .textOmaDiv {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-end;
+    align-content: flex-end;
 }
 
 .textOma {
     font-weight: 500;
+}
+
+// AUDIO
+.audioDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    .authorAudio {
+        margin-top: 2rem;
+        color: #313639;
+    }
 }
 
 @supports (display: grid) {
@@ -1266,13 +1261,15 @@ p {
             }
         }
 
-        &landscape {
+        &Landscape {
             img {
-                width: 30%;
+                width: 40vw;
                 height: auto;
             }
         }
     }
+
+
 }
 
 @media only screen and (max-width: 875px) {
@@ -1284,6 +1281,11 @@ p {
 
     .content img {
         width: 80%;
+    }
+
+    .pa {
+        width: 95%;
+        margin-left: 5%;
     }
 }
 
@@ -1306,12 +1308,22 @@ p {
             }
         }
 
-        &landscape {
+        &Landscape {
             img {
-                width: 50%;
+                width: 50vw;
                 height: auto;
             }
         }
     }
+
+    .pa {
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    .contentText {
+        font-size: 1rem;
+    }
+
 }
 </style>
