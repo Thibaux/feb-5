@@ -1,6 +1,6 @@
 <template>
     <div data-app id="app">
-        <countdown class="Time" v-if="showCountdown" @end="handleCountdownEnd" ref="countdown" :time="time" :interval="100" tag="p">
+        <countdown class="Time" v-if="showCountdown" @end="handleCountdownEnd" ref="countdown" :time="TimeToReveal" :interval="100" tag="p">
             <template slot-scope="props">
                 <div class="values">
                     <div class="days">
@@ -22,9 +22,9 @@
                 </div>
             </template>
         </countdown>
-        <!-- <div v-else>
-    <GridFull></GridFull>
-</div> -->
+        <div v-else>
+            <GridFull></GridFull>
+        </div>
     </div>
 </template>
 <script>
@@ -40,13 +40,15 @@ export default {
     },
     data() {
         let now = new Date();
-        let reveal = new Date("Febuari 5 2021 21:00");
+        // let reveal = new Date("Febuari 5 2021 21:00");
         // let reveal = new Date("januari 5 2021 21:00");
+        let reveal = new Date(2021, 1, 5, 21, 0, 0);
+        let time = reveal - now;
 
         return {
+            TimeToReveal: time,
             counting: false,
-            showCountdown: true,
-            time: reveal - now,
+            showCountdown: true
         }
     },
     methods: {
