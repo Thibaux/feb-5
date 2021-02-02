@@ -370,7 +370,7 @@
                                         <p class="pa">
                                             Onder het wijze oog van George’s Boeddha
                                             <br>
-                                            proosten we op zijn leven, inspiratie en wijsheid.
+                                            proosten we op zijn leven, inspiratie en optimisme.
                                         </p>
                                     </div>
                                 </v-card-text>
