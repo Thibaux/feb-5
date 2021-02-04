@@ -41,7 +41,7 @@ export default {
     data() {
         let now = new Date();
         let reveal = new Date(2021, 1, 5, 21, 0, 0);
-        // let reveal = new Date(2021, 1, 3, 19, 58, 0);
+        // let reveal = new Date(2021, 1, 4, 19, 15, 0);
         let time = reveal - now;
 
         return {

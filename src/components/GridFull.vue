@@ -53,24 +53,27 @@
                 </div>
             </div>
             <div class="panel">
-                <div class="content">
+                <div class="contentVierkant">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="width">
+                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    BIEKE TAART
+                                    <img src="./../assets/content/img/bieke2.jpg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
                                     <div>
-                                        BIEKE TAART
+                                        <img src="./../assets/content/img/bieke1.jpg" alt="">
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        Bieke en Niels
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog4 = false">
                                         Sluit
@@ -132,22 +135,27 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog5" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog5" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    BARTELINE
+                                    <img src="./../assets/content/video/tumbs/barteline.png" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgLandscape">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
                                     <div class="contentText">
-                                        BARTELINE
+                                        <video width="720" controls>
+                                            <source src="./../assets/content/video/barteline2.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        Barteline Swildens
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog5 = false">
                                         Sluit
@@ -180,6 +188,9 @@
                                 </p>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        Odylle Swildens
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog6 = false">
                                         Sluit
@@ -241,25 +252,31 @@
                 </div>
             </div>
             <div class="panel">
-                <div class="contentPortretMid">
+                <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog8" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog28" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/img/rwdeBoer.jpg" alt="" v-bind="attrs" v-on="on">
+                                <div v-bind="attrs" v-on="on">
+                                    <img src="./../assets/content/img/barteline.jpeg" alt="">
+                                </div>
                             </template>
-                            <v-card fluid fill-width class="modalImgPortret">
+                            <v-card class="modalImgLandscape">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/img/rwdeBoer.jpg" alt="">
+                                    <div class="contentText">
+                                        <video width="720" controls>
+                                            <source src="./../assets/content/video/barteline1.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <p class="author">
-                                        Rob de Boer
+                                        Barteline Swildens
                                     </p>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog8 = false">
+                                    <v-btn color="primary" text @click="dialog28 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -270,22 +287,35 @@
             </div>
             <!-- ROW 4 -->
             <div class="panel">
-                <div class="contentPortret">
+                <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog9" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog30" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
-                                <img src="./../assets/content/img/albertine.png" alt="" v-bind="attrs" v-on="on">
+                                <div v-bind="attrs" v-on="on">
+                                    <img src="./../assets/content/img/BepvanderHilst.jpg" alt="">
+                                </div>
                             </template>
-                            <v-card fluid fill-width class="modalImgPortret">
+                            <v-card class="modalImg">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <img src="./../assets/content/img/albertine.png" alt="">
+                                    <img src="./../assets/content/img/BepvanderHilst.jpg" alt="">
+                                    <p class="contentText">
+                                        <i>
+                                            Leuke herinnering op het atelier.
+                                        </i>
+                                    </p>
+                                    <p class="contentText Bep">
+                                        George nodigde ons uit om onze creativiteit te uiten op een schilderij waarbij hij aanwijzingen en tips gaf en natuurlijk zijn mening op humoristische wijze gaf.
+                                    </p>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        Bep van der Hilst
+                                    </p>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog9 = false">
+                                    <v-btn color="primary" text @click="dialog30 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -295,24 +325,30 @@
                 </div>
             </div>
             <div class="panel">
-                <div class="content">
+                <div class="contentPortretMid">
                     <div class="hvr-shrink text-center">
                         <v-dialog v-model="dialog10" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    WIEKE
+                                    <img src="./../assets/content/img/wieke.jpeg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <div class="contentText">
-                                        WIEKE
-                                    </div>
+                                    <img src="./../assets/content/img/wieke.jpeg" alt="">
+                                    <p class="contentText">
+                                        <i>
+                                            Boom van verbinding
+                                        </i>
+                                    </p>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        Wieke Ybema
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog10 = false">
                                         Sluit
@@ -332,7 +368,7 @@
                                     <img src="./../assets/content/img/yvonne.jpg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgVierkant">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
@@ -373,7 +409,7 @@
                                 <v-card-text>
                                     <div class="contentText">
                                         <img src="./../assets/content/img/pa.jpg" alt="">
-                                        <p class="left">
+                                        <p class="leftLessLeft">
                                             Onder het wijze oog van George’s Boeddha
                                             <br>
                                             proosten we op zijn leven, inspiratie en optimisme.
@@ -434,43 +470,22 @@
                 </div>
             </div>
             <div class="panel">
-                <div class="content">
+                <div class="contentPortretMid">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog12" transition="dialog-bottom-transition" :width="width">
+                        <v-dialog v-model="dialog9" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
-                                <div v-bind="attrs" v-on="on">
-                                    <p class="dashText">
-                                        George Swildens, De kunstenaar van de Creatieve expressie waar de woorden tekort schoten net als zijn leven.
-                                        <p class="morePoints">
-                                            . . .
-                                        </p>
-                                    </p>
-                                </div>
+                                <img src="./../assets/content/img/albertine.png" alt="" v-bind="attrs" v-on="on">
                             </template>
-                            <v-card class="modalImgLandscape">
+                            <v-card fluid fill-width class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <div class="contentText">
-                                        George Swildens, De kunstenaar van de Creatieve expressie waar de woorden tekort schoten net als zijn leven.
-                                        <br>
-                                        Zijn beeldende begeleiding als kunstenaar ging niet alleen om de kunst alleen, het maken van kunst was voor hem de overdragende trap. Het vormgeven met o.a beeldend materiaal was altijd dienstbaar aan het emotionele proces van George Swildens.
-                                        <br>
-                                        Het maken van kunst was zijn doel op zich, het was een doel van creatieve expressie in een andere taal: de taal van beelden en symbolen om zich te kunnen uiten als woorden tekort schieten. Het moment dat iemand open stond voor beeldende begeleiding van George was daar “opeens” het beeldende materiaal: de verf, het gekleurde papier, de potloden.
-                                        <br>
-                                        Dat deed iets in het contact tussen zijn vele cursisten van George als begeleider, het werd informeler, laagdrempeliger, gewoner. Bezig zijn met kleuren, beelden, symbolen en verhalen doet beroep op het non-verbale, op het gevoelsmatige, op het hart, op plezier en het maakte verbinding met het “gezonde deel” van mensen: hun essentie die los staat van een ziekte of een tekort komingen.
-                                        <br>
-                                        <br>
-                                        Mathijs Langkemper.
-                                        <br>
-                                        <br>
-                                        <img src="./../assets/content/img/mathijs.jpg" alt="">
-                                    </div>
+                                    <img src="./../assets/content/img/albertineFull.png" alt="">
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog12 = false">
+                                    <v-btn color="primary" text @click="dialog9 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -493,14 +508,17 @@
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
+                                    <img src="./../assets/content/img/guido.jpeg" alt="">
                                     <div class="contentText">
-                                        <img src="./../assets/content/img/guido.jpeg" alt="">
+                                        <i>
+                                            Generatie M
+                                        </i>
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <p class="author">
-                                        “Generatie M” door Mees, Ilse en Guido.
+                                        Mees, Ilse en Guido.
                                     </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog15 = false">
@@ -709,7 +727,7 @@
                                     <img src="./../assets/content/img/ron2.jpg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImgPortret">
+                            <v-card class="modalImgPortretSmall">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
@@ -747,15 +765,13 @@
                                     <img src="./../assets/content/img/ron1.jpg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgVierkantSmall">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
+                                    <img src="./../assets/content/img/ron1.jpg" alt="">
                                     <p class="contentText">
-                                        <img src="./../assets/content/img/ron1.jpg" alt="">
-                                    </p>
-                                    <p class="contentText">
-                                        Doe er ook een afbeelding bij van mijn laatste werkstuk dat ik vorig jaar gemaakt om het bericht wat kleurrijker te maken.
+                                        Een afbeelding van een kleurrijk werkstuk, die ik vorig jaar gemaakt heb.
                                     </p>
                                 </v-card-text>
                                 <v-divider></v-divider>
@@ -808,10 +824,10 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog32" transition="dialog-bottom-transition" :width="width">
+                        <v-dialog v-model="dialog24" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    <img src="./../assets/content/img/astrid.jpg" alt="">
+                                    <img src="./../assets/content/img/astrid.jpeg" alt="">
                                 </div>
                             </template>
                             <v-card class="modalImg">
@@ -849,8 +865,11 @@
                                             Vervolgens speel je een spel vaker en wanneer “de sleur” er in komt, dan is er weer een ander spel….
                                         </p>
                                     </div>
+                                    <img src="./../assets/content/img/astrid.jpeg" alt="">
                                     <p class="contentText">
-                                        <img src="./../assets/content/img/astrid.jpg" alt="">
+                                        <i>
+                                            Jozef Israëls - Kinderen der zee
+                                        </i>
                                     </p>
                                 </v-card-text>
                                 <v-divider></v-divider>
@@ -858,39 +877,93 @@
                                     <p class="author">
                                     </p>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog32 = false">
+                                    <v-btn color="primary" text @click="dialog24 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
                             </v-card>
                         </v-dialog>
                     </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="content">
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog30" transition="dialog-bottom-transition" :width="width">
+                        <v-dialog v-model="dialog12" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    <img src="./../assets/content/img/BepvanderHilst.jpg" alt="">
+                                    <p class="dashText">
+                                        George Swildens, De kunstenaar van de Creatieve expressie waar de woorden tekort schoten net als zijn leven.
+                                        <p class="morePoints">
+                                            . . .
+                                        </p>
+                                    </p>
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgLandscape">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
-                                    <p class="contentText">
-                                        <img src="./../assets/content/img/BepvanderHilst.jpg" alt="">
-                                    </p>
+                                    <div class="contentText">
+                                        George Swildens, De kunstenaar van de Creatieve expressie waar de woorden tekort schoten net als zijn leven.
+                                        <br>
+                                        Zijn beeldende begeleiding als kunstenaar ging niet alleen om de kunst alleen, het maken van kunst was voor hem de overdragende trap. Het vormgeven met o.a beeldend materiaal was altijd dienstbaar aan het emotionele proces van George Swildens.
+                                        <br>
+                                        Het maken van kunst was zijn doel op zich, het was een doel van creatieve expressie in een andere taal: de taal van beelden en symbolen om zich te kunnen uiten als woorden tekort schieten. Het moment dat iemand open stond voor beeldende begeleiding van George was daar “opeens” het beeldende materiaal: de verf, het gekleurde papier, de potloden.
+                                        <br>
+                                        Dat deed iets in het contact tussen zijn vele cursisten van George als begeleider, het werd informeler, laagdrempeliger, gewoner. Bezig zijn met kleuren, beelden, symbolen en verhalen doet beroep op het non-verbale, op het gevoelsmatige, op het hart, op plezier en het maakte verbinding met het “gezonde deel” van mensen: hun essentie die los staat van een ziekte of een tekort komingen.
+                                        <br>
+                                        <br>
+                                        Mathijs Langkemper.
+                                        <br>
+                                        <br>
+                                        <img src="./../assets/content/img/mathijs.jpg" alt="">
+                                    </div>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog12 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW 7 -->
+            <div class="panel">
+                <div class="contentPortretSmall">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog25" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/img/heleen.jpg" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImgPortret">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <div class="contentText">
+                                        <img src="./../assets/content/img/heleen.jpg" alt="">
+                                        <p class="contentText">
+                                            Ter nagedachtenis aan 5 februari. Het gemis blijft.
+                                            <br>
+                                            Mijn gedachten aan de vrijdagavond zal blijven.
+                                        </p>
+                                    </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
                                     <p class="author">
-                                        Bep van der Hilst
+                                        Heleen Breedveld
                                     </p>
                                     <v-spacer></v-spacer>
-                                    <v-btn color="primary" text @click="dialog30 = false">
+                                    <v-btn color="primary" text @click="dialog25 = false">
                                         Sluit
                                     </v-btn>
                                 </v-card-actions>
@@ -900,16 +973,33 @@
                 </div>
             </div>
             <div class="panel">
-                <div class="content">
-                </div>
-            </div>
-            <!-- ROW 7 -->
-            <div class="panel">
-                <div class="content">
-                </div>
-            </div>
-            <div class="panel">
-                <div class="content">
+                <div class="contentPortretMid">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog27" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/video/tumbs/Hanekamp3.png" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <video width="350" controls v-bind="attrs" v-on="on">
+                                        <source src="./../assets/content/video/Hanekamp3.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                    </video>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Familie Hanekamp
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog27 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <div class="panel">
@@ -946,10 +1036,59 @@
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="contentPortretMid">
+                        <div class="hvr-shrink text-center">
+                            <v-dialog v-model="dialog8" transition="dialog-bottom-transition" :width="widthPortret">
+                                <template v-slot:activator="{ on, attrs }">
+                                    <img src="./../assets/content/img/rwdeBoer.jpg" alt="" v-bind="attrs" v-on="on">
+                                </template>
+                                <v-card fluid fill-width class="modalImgPortret">
+                                    <v-card-title class="headline grey lighten-2">
+                                    </v-card-title>
+                                    <v-card-text>
+                                        <img src="./../assets/content/img/rwdeBoer.jpg" alt="">
+                                    </v-card-text>
+                                    <v-divider></v-divider>
+                                    <v-card-actions>
+                                        <p class="author">
+                                            Rob de Boer
+                                        </p>
+                                        <v-spacer></v-spacer>
+                                        <v-btn color="primary" text @click="dialog8 = false">
+                                            Sluit
+                                        </v-btn>
+                                    </v-card-actions>
+                                </v-card>
+                            </v-dialog>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="contentPortret">
+                        <div class="hvr-shrink text-center">
+                            <v-dialog v-model="dialog23" transition="dialog-bottom-transition" :width="widthPortret">
+                                <template v-slot:activator="{ on, attrs }">
+                                    <img src="./../assets/content/img/barry.jpg" alt="" v-bind="attrs" v-on="on">
+                                </template>
+                                <v-card fluid fill-width class="modalImgPortretSmall">
+                                    <v-card-title class="headline grey lighten-2">
+                                    </v-card-title>
+                                    <v-card-text>
+                                        <img src="./../assets/content/img/barry.jpg" alt="">
+                                    </v-card-text>
+                                    <v-divider></v-divider>
+                                    <v-card-actions>
+                                        <v-spacer></v-spacer>
+                                        <v-btn color="primary" text @click="dialog23 = false">
+                                            Sluit
+                                        </v-btn>
+                                    </v-card-actions>
+                                </v-card>
+                            </v-dialog>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel">
@@ -1398,6 +1537,13 @@ p {
                 height: auto;
             }
         }
+
+        &Small {
+            img {
+                width: 14vw;
+                height: auto;
+            }
+        }
     }
 }
 
@@ -1422,8 +1568,28 @@ p {
             height: auto;
         }
 
-
+        &Small {
+            img {
+                width: 23vw;
+                height: auto;
+            }
+        }
     }
+
+    &Vierkant {
+        img {
+            width: 35vw;
+            height: auto;
+        }
+
+        &Small {
+            img {
+                width: 32vw;
+                height: auto;
+            }
+        }
+    }
+
 
     &Landscape {
         img {
@@ -1469,7 +1635,13 @@ p {
 // modal text
 .contentText {
     padding: 1vw;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+
+
+}
+
+.Bep {
+    margin-top: -2rem;
 }
 
 // modal text align left
@@ -1486,6 +1658,15 @@ p {
         text-align: left;
     }
 }
+
+.leftLessLeft {
+    display: flex;
+    width: 81%;
+    margin-left: 19%;
+    text-align: left;
+    margin-top: 1rem;
+}
+
 
 // centerdLeft
 .centerdLeft {
@@ -1541,6 +1722,19 @@ p {
     }
 }
 
+// Barteline 
+.barteline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+    video {
+        padding: 1rem;
+    }
+}
+
+
 @supports (display: grid) {
     .wrapper>* {
         margin: 0;
@@ -1573,7 +1767,14 @@ p {
         }
     }
 
+    .barteline {
+        display: flex;
+        flex-direction: column;
 
+        video {
+            padding: 0.5rem;
+        }
+    }
 }
 
 @media only screen and (max-width: 875px) {
@@ -1585,11 +1786,6 @@ p {
 
     .content img {
         width: 80%;
-    }
-
-    .pa {
-        width: 95%;
-        margin-left: 5%;
     }
 }
 
@@ -1618,11 +1814,6 @@ p {
                 height: auto;
             }
         }
-    }
-
-    .pa {
-        width: 95%;
-        margin-left: 5%;
     }
 
     .contentText {
