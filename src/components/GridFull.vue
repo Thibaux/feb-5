@@ -55,7 +55,7 @@
             <div class="panel">
                 <div class="content">
                     <div class="hvr-shrink text-center">
-                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="widthPortret">
+                        <v-dialog v-model="dialog4" transition="dialog-bottom-transition" :width="width">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
                                     BIEKE TAART
@@ -89,7 +89,7 @@
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/video/tumbs/TinekevanGroen.png" alt="" v-bind="attrs" v-on="on">
                             </template>
-                            <v-card fluid fill-width class="modalImgPortret">
+                            <v-card fluid fill-width class="modalImg">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
@@ -329,19 +329,25 @@
                         <v-dialog v-model="dialog11" transition="dialog-bottom-transition" :width="widthPortret">
                             <template v-slot:activator="{ on, attrs }">
                                 <div v-bind="attrs" v-on="on">
-                                    YVONNE
+                                    <img src="./../assets/content/img/yvonne.jpg" alt="">
                                 </div>
                             </template>
                             <v-card class="modalImg">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
+                                    <img src="./../assets/content/img/yvonne.jpg" alt="">
                                     <div class="contentText">
-                                        YVONNE
+                                        <i>
+                                            Balans in de vier elementen
+                                        </i>
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
                                 <v-card-actions>
+                                    <p class="author">
+                                        Yvonne van Beek
+                                    </p>
                                     <v-spacer></v-spacer>
                                     <v-btn color="primary" text @click="dialog11 = false">
                                         Sluit
@@ -367,7 +373,7 @@
                                 <v-card-text>
                                     <div class="contentText">
                                         <img src="./../assets/content/img/pa.jpg" alt="">
-                                        <p class="pa">
+                                        <p class="left">
                                             Onder het wijze oog van George’s Boeddha
                                             <br>
                                             proosten we op zijn leven, inspiratie en optimisme.
@@ -404,14 +410,12 @@
                                 <v-card-text>
                                     <img src="./../assets/content/img/annekevanBeek.jpg" alt="">
                                     <div class="contentText">
-                                        <i>
-                                            Een schilderij dat ik in het atelier bij George maakte. Dit schilderij vond ik aansluiten bij het
-                                            onderwerp: "neem er één op mij".
-                                            Ik heb het schilderij nabewerkt op de computer en als je goed kijkt zie je George in het glas met ons meekijken.
-                                            <br>
-                                            <br>
-                                            Proost, op goede herinneringen en op het leven!
-                                        </i>
+                                        Een schilderij dat ik in het atelier bij George maakte. Dit schilderij vond ik aansluiten bij het
+                                        onderwerp: "neem er één op mij".
+                                        Ik heb het schilderij nabewerkt op de computer en als je goed kijkt zie je George in het glas met ons meekijken.
+                                        <br>
+                                        <br>
+                                        Proost, op goede herinneringen en op het leven!
                                     </div>
                                 </v-card-text>
                                 <v-divider></v-divider>
@@ -517,7 +521,7 @@
                                     <img src="./../assets/content/img/lies1.jpg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
@@ -549,7 +553,7 @@
                                     <img src="./../assets/content/img/lies2.jpg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
@@ -705,7 +709,7 @@
                                     <img src="./../assets/content/img/ron2.jpg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
@@ -749,6 +753,8 @@
                                 <v-card-text>
                                     <p class="contentText">
                                         <img src="./../assets/content/img/ron1.jpg" alt="">
+                                    </p>
+                                    <p class="contentText">
                                         Doe er ook een afbeelding bij van mijn laatste werkstuk dat ik vorig jaar gemaakt om het bericht wat kleurrijker te maken.
                                     </p>
                                 </v-card-text>
@@ -801,10 +807,96 @@
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog32" transition="dialog-bottom-transition" :width="width">
+                            <template v-slot:activator="{ on, attrs }">
+                                <div v-bind="attrs" v-on="on">
+                                    <img src="./../assets/content/img/astrid.jpg" alt="">
+                                </div>
+                            </template>
+                            <v-card class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <div class="contentText">
+                                        <p class="leftLefter">
+                                            Voor de geboortedag van George.
+                                            <br>
+                                            <br>
+                                            George hield van beweging en dat interesseert mij/ ons ook enorm. Via spel blijf je altijd in beweging.
+                                            <br>
+                                            <br>
+                                            Liefs, Edwin, Käthe, Hylke en Astrid
+                                            <br>
+                                            <br>
+                                        </p>
+                                        <p class="contentText">
+                                            Vanuit het “onbeschreven blad”
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            Spel is voor mij…..
+                                            <br>
+                                            <br>
+                                            Bezig zijn met iets, alleen of met anderen, waar je alleen of samen naar toe werkt, waarbij het doel niet altijd duidelijk is.
+                                            <br>
+                                            <br>
+                                            Wat je ziet voor bij komen is, verwondering, iets doen wat je nog niet eerder gedaan hebt, verrassend, ontdekkend, onverwachts, creatief,
+                                            fantasierijk en waar je alleen of met anderen ontzettend veel plezier in beleefd.
+                                            <br>
+                                            <br>
+                                            Vervolgens speel je een spel vaker en wanneer “de sleur” er in komt, dan is er weer een ander spel….
+                                        </p>
+                                    </div>
+                                    <p class="contentText">
+                                        <img src="./../assets/content/img/astrid.jpg" alt="">
+                                    </p>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog32 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog30" transition="dialog-bottom-transition" :width="width">
+                            <template v-slot:activator="{ on, attrs }">
+                                <div v-bind="attrs" v-on="on">
+                                    <img src="./../assets/content/img/BepvanderHilst.jpg" alt="">
+                                </div>
+                            </template>
+                            <v-card class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <p class="contentText">
+                                        <img src="./../assets/content/img/BepvanderHilst.jpg" alt="">
+                                    </p>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Bep van der Hilst
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog30 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <div class="panel">
@@ -1326,7 +1418,7 @@ p {
 
     &Portret {
         img {
-            width: 30vw;
+            width: 28vw;
             height: auto;
         }
 
@@ -1381,12 +1473,18 @@ p {
 }
 
 // modal text align left
-.pa {
+.left {
     display: flex;
     width: 85%;
     margin-left: 15%;
     margin-top: 1rem;
     text-align: left;
+
+    &Lefter {
+        width: 90%;
+        margin-left: 10%;
+        text-align: left;
+    }
 }
 
 // centerdLeft
