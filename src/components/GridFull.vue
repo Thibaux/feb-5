@@ -174,7 +174,7 @@
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/img/dyl.png" alt="" v-bind="attrs" v-on="on">
                             </template>
-                            <v-card fluid fill-width class="modalImg">
+                            <v-card fluid fill-width class="modalImgVierkant">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
@@ -440,7 +440,7 @@
                                     <img src="./../assets/content/img/annekevanBeek.jpg" alt="">
                                 </div>
                             </template>
-                            <v-card class="modalImg">
+                            <v-card class="modalImgPortret">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
@@ -887,7 +887,36 @@
                 </div>
             </div>
             <div class="panel">
-                <div class="content">
+                <div class="contentPortret">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog22" transition="dialog-bottom-transition" :width="width">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/img/thibaux.png" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImg">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <audio controls autoplay>
+                                        <source src="./../assets/content/audio/Beatles-Norwegian_Wood.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                                    </audio>
+                                    <p class="contentText">
+                                        The Beatles - Norwegian Wood
+                                    </p>
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Thibaux Swildens
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog22 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
                 </div>
             </div>
             <div class="panel">
@@ -944,7 +973,7 @@
                             <template v-slot:activator="{ on, attrs }">
                                 <img src="./../assets/content/img/heleen.jpg" alt="" v-bind="attrs" v-on="on">
                             </template>
-                            <v-card fluid fill-width class="modalImgPortret">
+                            <v-card fluid fill-width class="modalImgPortretSmall">
                                 <v-card-title class="headline grey lighten-2">
                                 </v-card-title>
                                 <v-card-text>
@@ -1065,23 +1094,54 @@
                 </div>
             </div>
             <div class="panel">
+                <div class="contentPortret">
+                    <div class="hvr-shrink text-center">
+                        <v-dialog v-model="dialog23" transition="dialog-bottom-transition" :width="widthPortret">
+                            <template v-slot:activator="{ on, attrs }">
+                                <img src="./../assets/content/img/barry.jpg" alt="" v-bind="attrs" v-on="on">
+                            </template>
+                            <v-card fluid fill-width class="modalImgPortretSmall">
+                                <v-card-title class="headline grey lighten-2">
+                                </v-card-title>
+                                <v-card-text>
+                                    <img src="./../assets/content/img/barry.jpg" alt="">
+                                </v-card-text>
+                                <v-divider></v-divider>
+                                <v-card-actions>
+                                    <p class="author">
+                                        Barry Wiebenga
+                                    </p>
+                                    <v-spacer></v-spacer>
+                                    <v-btn color="primary" text @click="dialog23 = false">
+                                        Sluit
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
                 <div class="content">
-                    <div class="contentPortret">
+                    <div class="contentPortretSmall">
                         <div class="hvr-shrink text-center">
-                            <v-dialog v-model="dialog23" transition="dialog-bottom-transition" :width="widthPortret">
+                            <v-dialog v-model="dialog18" transition="dialog-bottom-transition" :width="widthPortret">
                                 <template v-slot:activator="{ on, attrs }">
-                                    <img src="./../assets/content/img/barry.jpg" alt="" v-bind="attrs" v-on="on">
+                                    <img src="./../assets/content/img/bas1.jpg" alt="" v-bind="attrs" v-on="on">
                                 </template>
                                 <v-card fluid fill-width class="modalImgPortretSmall">
                                     <v-card-title class="headline grey lighten-2">
                                     </v-card-title>
                                     <v-card-text>
-                                        <img src="./../assets/content/img/barry.jpg" alt="">
+                                        <img src="./../assets/content/img/bas1.jpg" alt="">
                                     </v-card-text>
                                     <v-divider></v-divider>
                                     <v-card-actions>
+                                        <p class="author">
+                                            Bas en Sacha Swildens
+                                        </p>
                                         <v-spacer></v-spacer>
-                                        <v-btn color="primary" text @click="dialog23 = false">
+                                        <v-btn color="primary" text @click="dialog18 = false">
                                             Sluit
                                         </v-btn>
                                     </v-card-actions>
@@ -1093,14 +1153,89 @@
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="contentPortretMid">
+                        <div class="hvr-shrink text-center">
+                            <v-dialog v-model="dialog21" transition="dialog-bottom-transition" :width="widthPortret">
+                                <template v-slot:activator="{ on, attrs }">
+                                    <img src="./../assets/content/img/bas2.jpg" alt="" v-bind="attrs" v-on="on">
+                                </template>
+                                <v-card fluid fill-width class="modalImgPortretSmall">
+                                    <v-card-title class="headline grey lighten-2">
+                                    </v-card-title>
+                                    <v-card-text>
+                                        <img src="./../assets/content/img/bas2.jpg" alt="">
+                                    </v-card-text>
+                                    <v-divider></v-divider>
+                                    <v-card-actions>
+                                        <p class="author">
+                                            Bas en Sacha Swildens
+                                        </p>
+                                        <v-spacer></v-spacer>
+                                        <v-btn color="primary" text @click="dialog21 = false">
+                                            Sluit
+                                        </v-btn>
+                                    </v-card-actions>
+                                </v-card>
+                            </v-dialog>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="contentPortretMid">
+                        <div class="hvr-shrink text-center">
+                            <v-dialog v-model="dialog20" transition="dialog-bottom-transition" :width="width">
+                                <template v-slot:activator="{ on, attrs }">
+                                    <img src="./../assets/content/img/esmo.jpg" alt="" v-bind="attrs" v-on="on">
+                                </template>
+                                <v-card fluid fill-width class="modalImgPortret">
+                                    <v-card-title class="headline grey lighten-2">
+                                    </v-card-title>
+                                    <v-card-text>
+                                        <img src="./../assets/content/img/esmo.jpg" alt="">
+                                    </v-card-text>
+                                    <v-divider></v-divider>
+                                    <v-card-actions>
+                                        <p class="author">
+                                            Esmoreit Baptist
+                                        </p>
+                                        <v-spacer></v-spacer>
+                                        <v-btn color="primary" text @click="dialog20 = false">
+                                            Sluit
+                                        </v-btn>
+                                    </v-card-actions>
+                                </v-card>
+                            </v-dialog>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel">
                 <div class="content">
+                    <div class="content">
+                        <div class="hvr-shrink text-center">
+                            <v-dialog v-model="dialog19" transition="dialog-bottom-transition" :width="width">
+                                <template v-slot:activator="{ on, attrs }">
+                                    <img src="./../assets/content/img/dank.png" alt="" v-bind="attrs" v-on="on">
+                                </template>
+                                <v-card fluid fill-width class="modalImg">
+                                    <v-card-title class="headline grey lighten-2">
+                                    </v-card-title>
+                                    <v-card-text>
+                                        <img src="./../assets/content/img/dank.png" alt="">
+                                    </v-card-text>
+                                    <v-divider></v-divider>
+                                    <v-card-actions>
+                                        <v-spacer></v-spacer>
+                                        <v-btn color="primary" text @click="dialog19 = false">
+                                            Sluit
+                                        </v-btn>
+                                    </v-card-actions>
+                                </v-card>
+                            </v-dialog>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1171,7 +1306,7 @@ export default {
         widthPortret() {
             switch (this.$vuetify.breakpoint.name) {
                 case 'xs':
-                    return 400
+                    return 500
                 case 'sm':
                     return 500
                 case 'md':
@@ -1412,6 +1547,11 @@ p {
         // green
         background-color: #81d381;
     }
+
+    .panel:nth-child(36) {
+        // blue
+        background-color: #aec6cf;
+    }
 }
 
 .panel {
@@ -1562,15 +1702,16 @@ p {
         height: auto;
     }
 
+
     &Portret {
         img {
-            width: 28vw;
+            width: 27vw;
             height: auto;
         }
 
         &Small {
             img {
-                width: 23vw;
+                width: 22vw;
                 height: auto;
             }
         }
@@ -1635,9 +1776,8 @@ p {
 // modal text
 .contentText {
     padding: 1vw;
+    margin: 0;
     font-size: 1.4rem;
-
-
 }
 
 .Bep {
@@ -1775,6 +1915,24 @@ p {
             padding: 0.5rem;
         }
     }
+
+    .content {
+        &Portret {
+            &Mid {
+                img {
+                    width: 55%;
+                    height: auto;
+                }
+            }
+
+            &Small {
+                img {
+                    width: 50%;
+                    height: auto;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 875px) {
@@ -1784,9 +1942,9 @@ p {
         grid-column: 1 / span 1;
     }
 
-    .content img {
-        width: 80%;
-    }
+    // .content img {
+    //     width: 80%;
+    // }
 }
 
 @media only screen and (max-width: 575px) {
