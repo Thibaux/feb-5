@@ -265,7 +265,7 @@
                                 </v-card-title>
                                 <v-card-text>
                                     <div class="contentText">
-                                        <video width="720" controls>
+                                        <video height="1280" controls>
                                             <source src="./../assets/content/video/barteline1.mp4" type="video/mp4"> Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -1689,6 +1689,12 @@ p {
 
 // MODAL
 
+video {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
 // IMG
 .modalImg {
     img {
@@ -1697,11 +1703,10 @@ p {
         border-radius: 3px;
     }
 
-    video {
-        max-width: 100%;
-        height: auto;
-    }
-
+    // video {
+    // // height: 100%;
+    // height: auto;
+    // }
 
     &Portret {
         img {
@@ -1781,7 +1786,7 @@ p {
 }
 
 .Bep {
-    margin-top: -2rem;
+    margin-top: -1rem;
 }
 
 // modal text align left
@@ -1874,7 +1879,6 @@ p {
     }
 }
 
-
 @supports (display: grid) {
     .wrapper>* {
         margin: 0;
@@ -1933,6 +1937,10 @@ p {
             }
         }
     }
+
+    .Bep {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (max-width: 875px) {
@@ -1942,9 +1950,6 @@ p {
         grid-column: 1 / span 1;
     }
 
-    // .content img {
-    //     width: 80%;
-    // }
 }
 
 @media only screen and (max-width: 575px) {
